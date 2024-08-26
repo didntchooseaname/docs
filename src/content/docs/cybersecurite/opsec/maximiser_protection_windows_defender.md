@@ -1,12 +1,11 @@
 ---
+title: Maximiser la protection de Windows Defender
 description: Maximisez la protection de Windows Defender ! Dans cet article nous verrons la configuration que j'utilise pour augmenter les capacitiés de windows defender et ses différents modules.
 categories: [OPSEC]
 date: 2023-09-01
 tags: [cybersécurité, opsec, sécurité, windows, defender, maps, application, guard]
 order: 97
 ---
-
-# :shield: Maximiser la protection de Windows Defender
 
 ![Source : 0ut3r.space](images/maximiser_protection_windows_defender/defender.webp)
 

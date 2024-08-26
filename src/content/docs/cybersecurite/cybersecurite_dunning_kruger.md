@@ -1,12 +1,11 @@
 ---
+title: La cybersécurité et l'effet Dunning-Kruger
 description: L'effet dunning Kruger est appliquable au domaine de la cybersécurité et cela représente une menace pour les entreprises.
 categories: [Cybersécurité]
 date: 2023-11-29
 tags: [Cybersécurité, dunning, kruger]
 order: 1
 ---
-
-# :zany_face: La cybersécurité et l'effet Dunning-Kruger
 
 ![(Source : fourweekmba.com)](images/cybersecurite_dunning_kruger/dunning-kruger.webp)
 

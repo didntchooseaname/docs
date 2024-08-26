@@ -1,12 +1,11 @@
 ---
+title: Google Ads, une menace bien réelle
 description: Pourquoi Google ads est une menace sérieuse pour les entreprises et les particuliers.
 categories: [Cybersécurité]
 date: 2024-07-01
 tags: [Cybersécurité, google, ads, threat]
 order: 2
 ---
-
-# 😐 Google Ads, une menace bien réelle
 
 ![](images/google_ads_threat/google-ads.webp)
 

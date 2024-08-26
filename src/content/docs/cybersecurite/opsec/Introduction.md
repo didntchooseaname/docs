@@ -1,4 +1,5 @@
 ---
+title: Introduction
 description: Privacy isn't about hidding but losing, most of us have nothing to hide but almost all of us have something to lose.
 categories: [OPSEC]
 date: 2024-01-29
@@ -14,8 +15,6 @@ Si vous en remarquez une, contactez-moi [ici](mailto:contactit.yarka@slmail.me) 
 !!!
 
 ==-
-
-# :mag_right: Introduction
 
 > :us: Privacy isn't about hidding but losing, most of us have nothing to hide but almost all of us have something to   lose.  
 

@@ -1,12 +1,11 @@
 ---
+title: L'authentification multifacteurs
 description: Lorsque vous utilisez un service en ligne, faites un tour dans les paramètres ! Utilisez l'authentification multifacteurs au tant que possible !
 categories: [OPSEC]
 date: 2023-08-30
 tags: [2fa, multifactor, authentification, mfa]
 order: 96
 ---
-
-# :closed_lock_with_key: L'authentification multifacteurs
 
 ![(Source : apog.net)](images/multifactor_authentification/MFA.webp)
 

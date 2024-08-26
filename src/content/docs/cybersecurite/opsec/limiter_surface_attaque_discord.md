@@ -1,12 +1,11 @@
 ---
+title: Limiter sa surface d'attaque sur Discord
 description: Avez-vous déjà entendu parler de DOX/DOXXING/SWAT ? Comprendre le fonctionnement de ces pratiques et s'en protéger !
 categories: [OPSEC]
 date: 2023-08-18
 tags: [cybersécurité, osint, prevention, discord]
 order: 99
 ---
-
-# 🙅‍♂️ Limiter sa surface d'attaque sur Discord
 
 ![Source : daily-sun.com](images/limiter_surface_attaque_discord/discord.webp)
 
