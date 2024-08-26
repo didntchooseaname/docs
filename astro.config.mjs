@@ -12,7 +12,10 @@ export default defineConfig({
         starlightThemeRapide(),
         starlightImageZoom(),
       ],
-      title: 'Docs',
+      title: 'docs.contactit.fr',
+      logo: {
+        src: './src/assets/contactit.webp',
+      },
       tableOfContents: true,
       defaultLocale: 'root',
       sidebar: [
@@ -38,9 +41,10 @@ export default defineConfig({
       },
       social: {
         github: 'https://github.com/didntchooseaname',
+        linkedin: 'https://www.linkedin.com/in/didntchooseaname',
       },
     }),
     embeds(),
-	mdx(),
+    mdx(),
   ],
 });
