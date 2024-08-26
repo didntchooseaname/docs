@@ -39,8 +39,6 @@ export default defineConfig({
 			social: {
 				github: 'https://github.com/didntchooseaname',
 			},
-			sidebar: [
-			],
 		}),
 	],
 });
