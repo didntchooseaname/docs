@@ -8,6 +8,9 @@ import mdx from '@astrojs/mdx';
 export default defineConfig({
   integrations: [
     starlight({
+      customCss: [
+        './src/styles/custom.css',
+      ],
       plugins: [
         starlightThemeRapide(),
         starlightImageZoom(),

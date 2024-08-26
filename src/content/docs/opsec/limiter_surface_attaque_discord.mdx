@@ -1,165 +1,163 @@
 ---
-title: Limiter sa surface d'attaque sur Discord
-description: Avez-vous déjà entendu parler de DOX/DOXXING/SWAT ? Comprendre le fonctionnement de ces pratiques et s'en protéger !
+title: Reducing Your Attack Surface on Discord
+description: Have you ever heard of DOX/DOXXING/SWAT? Understand how these practices work and protect yourself!
 categories: [OPSEC]
 date: 2023-08-18
-tags: [cybersécurité, osint, prevention, discord]
+tags: [cybersecurity, osint, prevention, discord]
 order: 99
 template: doc
 ---
 
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
-![Source : daily-sun.com](../../../assets/opsec/limiter_surface_attaque_discord/discord.webp)
+![Source: daily-sun.com](../../../assets/opsec/limiter_surface_attaque_discord/discord.webp)
 
 <details>
-<summary>Révisions</summary>
+<summary>Revisions</summary>
 Date | Changes
 --- | ---
-15/09/2023 | Révisions
-21/08/2023 | Révisions 
-20/08/2023 | Révisions 
+15/09/2023 | Revisions
+21/08/2023 | Revisions 
+20/08/2023 | Revisions 
 18/08/2023 | Initial push 
 </details>
 
-:icon-info: Avez-vous déjà entendu parler de **"DOX/DOXXING/SWAT"** ? **Comprendre le fonctionnement de ces pratiques et vous en protéger !** 
+Have you ever heard of **"DOX/DOXXING/SWAT"**? **Understand how these practices work and protect yourself!**
 
-➡️ Le fait de "DOX" est de **partager des informations personnelles** sur une personne **sans son consentement**, dans le but de nuire à celle-ci.
+➡️ The act of "DOX" involves **sharing personal information** about someone **without their consent**, with the intent to harm them.
 
-:icon-tools: Le principe technique qui se cache derrière ce terme est l'**OSINT**. L'**Open Source Intelligence** (OSINT) est une pratique de **reconnaissance légale** visant à **récolter des informations sur une entité physique ou morale** à partir de **sources ouvertes**. Elle est utilisée par les professionnels de la cybersécurité, les agences gouvernementales, les autorités... Ce n'est pas une niche mais une pratique très puissante et très largement utilisée.  
+The technical principle behind this term is **OSINT**. **Open Source Intelligence** (OSINT) is a **legal reconnaissance** practice aimed at **gathering information about a physical or legal entity** from **open sources**. It is used by cybersecurity professionals, government agencies, authorities... It’s not niche but a very powerful and widely used practice.
 
-:icon-milestone: Les sources utilisées en OSINT sont nombreuses, par exemple :  
+- Websites/apps and social networks (your **accounts** on these platforms) and, by extension, the content you share on them.
+- Search engines (Google, Bing, Duckduckgo...).
+- Leak databases (services/sites compromised where information has leaked online), which fall outside the scope of OSINT (illegal data possession).
+- White/Yellow pages and other directory listings.
+- Specialized sites and tools (Mr.Holmes, Maigret, Holehe, Maltego, whatsmyname.app, intelx.io...) that facilitate the collection of information from multiple sources in one place.
 
-- Les sites/applications et réseaux sociaux (vos **comptes** sur ces derniers) et donc par extension, le contenu que vous partagez sur ceux-ci.
-- Les moteurs de recherche (Google, Bing, Duckduckgo...).
-- Les bases de données leaks (services/sites compromis dont des informations ont fuité en ligne), sort du scope de l'OSINT (détention illégale de données).
-- Les pages blanches/jaunes et autres annuaires de recensement.
-- Les sites et outils spécialisés (Mr.Holmes, Maigret, Holehe, Maltego, whatsmyname.app, intelx.io...), qui facilitent la récole d'informations en un point à partir de sources multiples.
+As you’ve understood, OSINT is an **investigative process** that is primarily **PASSIVE** (excluding phishing, "token grab," or any so-called "active" actions). This means the target will not be informed of this process, making it even more dangerous.
 
-:icon-shield-check: Comme vous l'avez compris l'OSINT est un **processus d'investigation** à la base **PASSIF** (ont exclu ici le phishing, "token grab" ou toute action dites "atcive"). C’est-à-dire que la cible ne sera pas informée de ce processus, ce qui le rend encore plus dangereux.  
+This article aims to provide elements to **prevent information gathering** and **control the exposure of your Discord profile**.
 
-Cet article vise à donner des éléments pour **prévenir la récolte d'informations** et **maîtriser l'exposition de votre profil Discord**.  
+✅ In short, most of the work can be done by using a fake identity, email address, phone number, and sharing the minimum amount of information possible to reduce your digital footprint, at least on Discord.
 
-✅ Pour faire court, le gros du travail peut être fais en utilisant une fausse identité, adresse mail, numéro de téléphone et en partageant le minimum d'informations possibles, pour réduire votre empreinte numérique au moins sur Discord.
+➡️ There are different entry points:
 
-➡️ Il existe différent points d'entrée :  
+- Username.
+- All your previous usernames.
+- Biography.
+- Profile picture.
+- Linked accounts (social networks, Spotify, games...).
+- User ID (accessible via developer tools).
+- The email used during Discord registration.
 
-- Le pseudo.
-- Tous vos anciens pseudos.
-- La biographie.
-- La photo de profil.
-- Les comptes liés (réseaux sociaux, Spotify, jeux...).
-- L'ID utilisateur (accessible depuis les developer tools).  
-- Le mail utilisé lors de l'inscription sur Discord.  
-
-:::note[Date de création du compte]
-La date de création du compte ainsi que la date à laquelle vous avez rejoint un serveur, donnent des informations sur la récence de votre compte, donc par extension des informations vous concernant.
+:::note[Account Creation Date]
+The account creation date and the date you joined a server provide information about how recent your account is, and by extension, information about you.
 :::
 
-:icon-thumbsup: **Le bon sens est tout aussi important** :
+**Common sense is just as important**:
 
-- Ne partagez pas d'information (oral, écrit, partage d'écran et webcam) à caractère personnel sur Discord.  
-⚠️ **À PERSONNE** (ni amis, ni "connaissances", ni même à votre famille ou collègues) :::  
+- Do not share any personal information (spoken, written, screen share, or webcam) on Discord.
+⚠️ **WITH NO ONE** (not with friends, "acquaintances," not even with your family or colleagues) :::
 
-- Ne scannez aucun **qrcode**, surtout si ce dernier vous est proposé à des fins de vérification sur un serveur.
+- Do not scan any **QR code**, especially if it’s offered for verification purposes on a server.
 
-:::danger[Partager des informations sensibles sur Discord]
-Si vous voulez malgré tout partager une information sensible sur Discord, mais de façon éphémère et sans traces, utilisez un service de partage de texte en ligne, chiffré de bout en bout, avec un mot de passe et une expiration comme : <a href="https://privatebin.net" target="_blank">PrivateBin</a>. De cette manière l'accès à la donnée n'est autorisé qu’une seule fois et/ou nécessite un mot de passe et expire après une date définie. Pour les fichiers, vous pouvez utiliser un service comme <a href="https://proton.me/fr/drive" target="_blank">Protondrive</a> (nécessite un compte et est limité à 1Go gratuit) ou <a href="https://www.swisstransfer.com/fr-fr" target="_blank">Swisstransfer</a> (ne nécessite pas de compte et est limité à 50Go gratuits).
+:::danger[Sharing Sensitive Information on Discord]
+If you still want to share sensitive information on Discord, but in a temporary and trace-free manner, use an online text-sharing service that is end-to-end encrypted, password-protected, and has an expiration date like: <a href="https://privatebin.net" target="_blank">PrivateBin</a>. This way, the data can only be accessed once and/or requires a password and expires after a set date. For files, you can use a service like <a href="https://proton.me/fr/drive" target="_blank">Protondrive</a> (requires an account and is limited to 1GB for free) or <a href="https://www.swisstransfer.com/fr-fr" target="_blank">Swisstransfer</a> (no account required and limited to 50GB for free).
 :::
 
 ---
 
-## ℹ️ ZONE 1 (facile)
+## ℹ️ ZONE 1 (Easy)
 
 :::tip[Info]
-Cette zone est destinée aux néophytes qui souhaiteraient adopter quelques bonnes pratiques (le minimum vital) rapidement.
+This zone is intended for beginners who want to quickly adopt some good practices (the essential minimum).
 :::
 
-- Ne pas utiliser le même pseudo sur toutes vos plateformes, privilégiez un pseudo unique à Discord.
-- Limitez-vous au strict nécessaire dans votre biographie, pas de <a href="https://linktr.ee" target="_blank">Linktr.ee</a> ou de liens vers vos réseaux sociaux.
-- Évitez les tokens grab, cookie stealer ou iplogger : **ne cliquez sur AUCIN LIEN dans Discord** (même youtube ! copiez/collez ou réécrivez le titre à la place), ouvrez-le dans un autre navigateur (si possible prévu à cet effet (sandbox ou mieux un <a href="https://www.browserling.com" target="_blank">service de sandbox en ligne</a>).
-- Ne liez pas vos comptes de jeux et sites à Discord ! Toutes applications liées à votre profil, comme des bots ou des comptes verront les informations de celui-ci (notamment les comptes liés, ce qui peut faire fuiter votre profil, mail, nom/prénom... (si utilisez sur les services liés)).
+- Don’t use the same username on all your platforms; prefer a unique username for Discord.
+- Limit yourself to the bare minimum in your biography, no <a href="https://linktr.ee" target="_blank">Linktr.ee</a> or links to your social networks.
+- Avoid token grabs, cookie stealers, or IP loggers: **do not click on ANY LINK in Discord** (even YouTube! copy/paste or rewrite the title instead), open it in another browser (if possible, one specifically set up for this purpose—sandboxed or, better yet, use an <a href="https://www.browserling.com" target="_blank">online sandbox service</a>).
+- Don’t link your gaming and site accounts to Discord! All applications linked to your profile, such as bots or accounts, will see information about it (especially linked accounts, which can leak your profile, email, name/first name... (if used on the linked services)).
 
 ![](../../../assets/opsec/limiter_surface_attaque_discord/linkedaccounts.webp)
 
 https://youtu.be/-lEg13LKJxE?si=VfgjvBky_GsWTfqC&t=234
 
-:arrow_right: ~~Si vous devez lier un ou plusieurs comptes, décochez l'affichage sur votre profil :~~   
+~~If you must link one or more accounts, uncheck the display on your profile:~~
 
-![Réduire la visibilité publique des comptes liés à Disord](../../../assets/opsec/limiter_surface_attaque_discord/discord_private.png)
+![Reducing public visibility of linked accounts on Discord](../../../assets/opsec/limiter_surface_attaque_discord/discord_private.png)
 
-:::caution[Discord à affiché vos comptes (même si ceux-ci sont cachés) !]
-Discord à affiché tous les comptes liés à un profil, indépendamment de la configuration (caché ou non dans les paramètres), source: cet <a target="blank" href="https://discordpreviews.com/private-connections-bug">article</a> et ce <a target="blank" href="https://twitter.com/panley01/status/1692036545539101049">Thread X</a> :  
+:::caution[Discord Has Displayed Your Accounts (Even If They Are Hidden)!]
+Discord has displayed all accounts linked to a profile, regardless of the configuration (hidden or not in the settings), source: this <a target="blank" href="https://discordpreviews.com/private-connections-bug">article</a> and this <a target="blank" href="https://twitter.com/panley01/status/1692036545539101049">X Thread</a>:
 
 https://twitter.com/panley01/status/1692036545539101049
 
-:unamused: Ne liez tous simplement pas vos comptes à Discord !
+Just don’t link your accounts to Discord!
 :::
 
-- N'utilisez aucun selfbot, injection client (betterdiscord like) ou tout autre modifications du client.
-- Ne vous connectez jamais à un site qui propose de vous connecter avec Discord (dans le cas où la base de données du site fuite, des informations tels que : votre pseudo, ID Discord, email, hash de mot de passe... seront disponibles en ligne. Un exemple récent avec <a target="blank" href="https://web.archive.org/web/20230823102446/https://discord.io">discord.io</a>).
+- Don’t use any selfbot, injection client (BetterDiscord-like), or any other client modifications.
+- Never connect to a site that offers to log in with Discord (if the site’s database is compromised, information such as your username, Discord ID, email, password hash... will be available online. A recent example is <a target="blank" href="https://web.archive.org/web/20230823102446/https://discord.io">discord.io</a>).
 
-Si vous souhaitez toutefois utiliser cette fonctionnalité sur les sites qui la propose, créez-vous un autre compte prévu à cet effet en suivant les exigences de la [zone 3](#zone-3-avancé).
+If you still wish to use this feature on the sites that offer it, create another account specifically for this purpose by following the requirements in [Zone 3](#zone-3-advanced).
 
 ---
 
-## ⚠️ ZONE 2 (intermédiaire)
+## ⚠️ ZONE 2 (Intermediate)
 
 :::caution[Info]
-Cette zone s'aditionne à la précédente et **inclut différents changements de paramétrages** dans Discord.
+This zone builds on the previous one and **includes various Discord settings changes**.
 :::
 
-- Si vous partagez votre écran, activez le mode streameur :
+- If you share your screen, enable streamer mode:
 
 ![](../../../assets/opsec/limiter_surface_attaque_discord/discord_streamer.webp)
 
-- S'assurer que **"Filtrer tous les messages privés"** (spam) soit activé :
+- Make sure **"Filter all private messages"** (spam) is enabled:
 
 ![](../../../assets/opsec/limiter_surface_attaque_discord/discord_spam.png)
 
-- S'assurer que **"Autoriser les messages privés venant des membres du serveur"** et **"Autoriser les demandes de messages en provenance des membres du serveur que tu pourrais ne pas connaître"** soient désactivés :
+- Ensure **"Allow private messages from server members"** and **"Allow message requests from server members you may not know"** are disabled:
 
 ![](../../../assets/opsec/limiter_surface_attaque_discord/discord_messages.png)
 
-- Vérifiez l'accès des applications/bots/comptes à vos informations, à savoir : quelles informations peuvent ils récolter, quelles sont les permissions qui leur sont accordés et si possible, retirez toutes les autorisations.
+- Check the access that applications/bots/accounts have to your information: what information they can collect, what permissions are granted to them, and, if possible, revoke all authorizations.
 
 ![](../../../assets/opsec/limiter_surface_attaque_discord/discord_autorisations.webp)
 
 ---
 
-## 🔐 ZONE 3 (avancé)
+## 🔐 ZONE 3 (Advanced)
 
 :::danger[Info]
-Cette zone s'additionne aux précédentes et présente des **concepts avancés** pour créer un compte Discord sans données personnelles.
+This zone builds on the previous ones and presents **advanced concepts** for creating a Discord account without personal data.
 :::
 
-- Recréez un compte avec une fausse identité <a href="https://www.fakenamegenerator.com" target="_blank">fakenamegenerator</a> (par exemple) pallie le potentiel risque de fuite de données de l'ancien compte.
-- Utilisez un **email unique** pour Discord (alias recommandés ex. <a href="https://simplelogin.io" target="_blank">SimpleLogin</a> ) 
+- Recreate an account with a fake identity <a href="https://www.fakenamegenerator.com" target="_blank">fakenamegenerator</a> (for example) to mitigate the potential data leak risk from the old account.
+- Use a **unique email** for Discord (recommended aliases e.g., <a href="https://simplelogin.io" target="_blank">SimpleLogin</a>).
 
 <CardGrid>
   <LinkCard
-    title="Consulter l'article à ce sujet"
-    href="../alias_mail"
+    title="Read the article on this topic"
+    href="https://docs.contactit.fr/opsec/alias_mail"
   />
 </CardGrid>
 
-- Il y a deja eu des leaks sur des plateformes tierces majeures :  
+- There have already been leaks on major third-party platforms:
 
 https://twitter.com/panley01/status/1691184136889708545
 
-- Utilisez un mot de passe respectant l es éxigences de l'ANSSI (complexité, stockage et cycles de vie, gestionnaire de mot de passe fortement recommandé (ex. [KeePass](https://keepassxc.org) )) et activez **l'authentification multifacteurs** :
+- Use a password that meets ANSSI's requirements (complexity, storage and lifecycle, password manager highly recommended, e.g. <a href="https://keepassxc.org" target="_blank">KeePassXC</a>) and enable **multi-factor authentication**:
 
 <CardGrid>
   <LinkCard
-    title="Voir la doc"
-    href="https://www.ssi.gouv.fr/guide/recommandations-relatives-a-lauthentification-multifacteur-et-aux-mots-de-passe/"
+    title="View the doc"
+    href="https://www.ssi.gouv.fr/guide/recommandations-relatives-a-lauthentification-multifacteur-et-aux-mots-de-passe"
   />
 </CardGrid>
 
-- Pour la 2FA utilisez un **numéro de téléphone unique à Discord** (ex. <a href="https://www.onoff.app" target="_blank">OnOff</a> ).
+- For 2FA, use a **phone number unique to Discord** (e.g. <a href="https://www.onoff.app" target="_blank">OnOff</a>).
 
 :::note
-Dans le cas où vous appliquez toutes ces mesures, le seul point d'entrée pour vous atteindre est alors en dehors de Discord. C'est d'ailleurs l'un des moyens privilégié pour récolter des informations sur vous, vous faire installer un programme malveillant ou vous subtiliser un cookie de session (comme votre token Discord).  
+If you follow all these measures, the only entry point to reach you will be outside of Discord. This is, in fact, one of the preferred methods for gathering information about you, tricking you into installing malicious software, or stealing a session cookie (such as your Discord token).
 
-L'ensemble de ces recommandations vous sont proposées à titre suggestif. Vous pouvez ne pas en appliquer certaines, dû à votre niveau de sécurité voulu. Dans ce cas, il est important de comprendre le risque et d'en accepter les conséquences potentielles.
+These recommendations are offered as suggestions. You may choose not to implement some of them based on your desired level of security. In such cases, it’s important to understand the risks and accept the potential consequences.
 :::
