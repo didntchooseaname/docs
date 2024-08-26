@@ -1,12 +1,14 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import starlightThemeRapide from 'starlight-theme-rapide'
-import starlightImageZoom from 'starlight-image-zoom'
-//import starlightImageZoom from 'starlight-showcases'
+import starlightThemeRapide from 'starlight-theme-rapide';
+import starlightImageZoom from 'starlight-image-zoom';
+import mdx from '@astrojs/mdx';
+import embeds from 'astro-embed/integration'
 
-// https://astro.build/config
 export default defineConfig({
 	integrations: [
+		embeds(), 
+		mdx(),
 		starlight({
 			plugins: [
 				starlightThemeRapide(),
