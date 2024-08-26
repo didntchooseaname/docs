@@ -3,6 +3,7 @@ import starlight from '@astrojs/starlight';
 import starlightThemeRapide from 'starlight-theme-rapide';
 import starlightImageZoom from 'starlight-image-zoom';
 import embeds from 'astro-embed/integration';
+import mdx from '@astrojs/mdx';
 
 export default defineConfig({
   integrations: [
@@ -39,6 +40,7 @@ export default defineConfig({
         github: 'https://github.com/didntchooseaname',
       },
     }),
-    embeds(), 
+    embeds(),
+	mdx(),
   ],
 });
