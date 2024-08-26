@@ -8,6 +8,8 @@ order: 99
 template: doc
 ---
 
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
 ![Source : daily-sun.com](../../../assets/opsec/limiter_surface_attaque_discord/discord.webp)
 
 ==- :wrench: Révisions
@@ -83,7 +85,7 @@ Cette zone est destinée aux néophytes qui souhaiteraient adopter quelques bonn
 
 ![](../../../assets/opsec/limiter_surface_attaque_discord/linkedaccounts.webp)
 
-https://www.youtube-nocookie.com/embed/-lEg13LKJxE?si=6YhpIhZzKjO4ukvk&amp;start=234
+https://youtu.be/-lEg13LKJxE?si=VfgjvBky_GsWTfqC&t=234
 
 :arrow_right: ~~Si vous devez lier un ou plusieurs comptes, décochez l'affichage sur votre profil :~~  
 </center>  
@@ -144,11 +146,26 @@ Cette zone s'additionne aux précédentes et présente des **concepts avancés**
 ==- ↘️ Déplier la zone
 
 - Recréez un compte avec une fausse identité <a href="https://www.fakenamegenerator.com" target="_blank">fakenamegenerator</a> (par exemple) pallie le potentiel risque de fuite de données de l'ancien compte.
-- Utilisez un **email unique** pour Discord (alias recommandés ex. <a href="https://simplelogin.io" target="_blank">SimpleLogin</a> ) [!button variant="primary" size="xs" target="blank" icon="arrow-up-right" iconAlign="right" text="Consulter l'article à ce sujet"](alias_mail.md)  
+- Utilisez un **email unique** pour Discord (alias recommandés ex. <a href="https://simplelogin.io" target="_blank">SimpleLogin</a> ) 
+
+<CardGrid>
+  <LinkCard
+    title="Consulter l'article à ce sujet"
+    href="alias_mail.md"
+  />
+</CardGrid> 
 
 https://twitter.com/panley01/status/1691184136889708545
 
-- Utilisez un mot de passe respectant [!button corners="pill" size="s" target="blank" text="Les éxigences de l'ANSSI :icon-link-external:"](https://www.ssi.gouv.fr/guide/recommandations-relatives-a-lauthentification-multifacteur-et-aux-mots-de-passe/) (complexité, stockage et cycles de vie, gestionnaire de mot de passe fortement recommandé (ex. [KeePass](https://keepassxc.org) )) et activez **l'authentification multifacteurs**.
+- Utilisez un mot de passe respectant l es éxigences de l'ANSSI (complexité, stockage et cycles de vie, gestionnaire de mot de passe fortement recommandé (ex. [KeePass](https://keepassxc.org) )) et activez **l'authentification multifacteurs** :
+
+<CardGrid>
+  <LinkCard
+    title="Voir la doc"
+    href="https://www.ssi.gouv.fr/guide/recommandations-relatives-a-lauthentification-multifacteur-et-aux-mots-de-passe/"
+  />
+</CardGrid>
+
 - Pour la 2FA utilisez un **numéro de téléphone unique à Discord** (ex. <a href="https://www.onoff.app" target="_blank">OnOff</a> ).
 
 ===
