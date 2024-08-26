@@ -19,7 +19,6 @@ export default defineConfig({
       logo: {
         src: './src/assets/contactit.webp',
       },
-      tableOfContents: true,
       defaultLocale: 'root',
       
       locales: {
