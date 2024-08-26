@@ -8,7 +8,7 @@ order: 99
 template: doc
 ---
 
-![Source : daily-sun.com](images/limiter_surface_attaque_discord/discord.webp)
+![Source : daily-sun.com](../../../assets/opsec/limiter_surface_attaque_discord/discord.webp)
 
 ==- :wrench: Révisions
 
@@ -81,14 +81,14 @@ Cette zone est destinée aux néophytes qui souhaiteraient adopter quelques bonn
 - Évitez les tokens grab, cookie stealer ou iplogger : **ne cliquez sur AUCIN LIEN dans Discord** (même youtube ! copiez/collez ou réécrivez le titre à la place), ouvrez-le dans un autre navigateur (si possible prévu à cet effet (sandbox ou mieux un <a href="https://www.browserling.com" target="_blank">service de sandbox en ligne</a>)).
 - Ne liez pas vos comptes de jeux et sites à Discord ! Toutes applications liées à votre profil, comme des bots ou des comptes verront les informations de celui-ci (notamment les comptes liés, ce qui peut faire fuiter votre profil, mail, nom/prénom... (si utilisez sur les services liés)).
 
-![](images/limiter_surface_attaque_discord/linkedaccounts.webp)
+![](../../../assets/opsec/limiter_surface_attaque_discord/linkedaccounts.webp)
 
 <center><iframe width="750" height="400" src="https://www.youtube-nocookie.com/embed/-lEg13LKJxE?si=6YhpIhZzKjO4ukvk&amp;start=234" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
 :arrow_right: ~~Si vous devez lier un ou plusieurs comptes, décochez l'affichage sur votre profil :~~  
 </center>  
 
-![Réduire la visibilité publique des comptes liés à Disord](images/limiter_surface_attaque_discord/discord_private.png)
+![Réduire la visibilité publique des comptes liés à Disord](../../../assets/opsec/limiter_surface_attaque_discord/discord_private.png)
 
 :::warning :thinking_face: Update du 17 août 2023 - Discord à affiché vos comptes (même si ceux-ci sont cachés).
 Discord à affiché tous les comptes liés à un profil, indépendamment de la configuration (caché ou non dans les paramètres), source: cet <a target="blank" href="https://discordpreviews.com/private-connections-bug">article</a> et ce <a target="blank" href="https://twitter.com/panley01/status/1692036545539101049">Thread X</a> :  
@@ -117,19 +117,19 @@ Cette zone s'aditionne à la précédente et **inclut différents changements de
 
 - Si vous partagez votre écran, activez le mode streameur :
 
-![](images/limiter_surface_attaque_discord/discord_streamer.webp)
+![](../../../assets/opsec/limiter_surface_attaque_discord/discord_streamer.webp)
 
 - S'assurer que **"Filtrer tous les messages privés"** (spam) soit activé :
 
-![](images/limiter_surface_attaque_discord/discord_spam.png)
+![](../../../assets/opsec/limiter_surface_attaque_discord/discord_spam.png)
 
 - S'assurer que **"Autoriser les messages privés venant des membres du serveur"** et **"Autoriser les demandes de messages en provenance des membres du serveur que tu pourrais ne pas connaître"** soient désactivés :
 
-![](images/limiter_surface_attaque_discord/discord_messages.png)
+![](../../../assets/opsec/limiter_surface_attaque_discord/discord_messages.png)
 
 - Vérifiez l'accès des applications/bots/comptes à vos informations, à savoir : quelles informations peuvent ils récolter, quelles sont les permissions qui leur sont accordés et si possible, retirez toutes les autorisations.
 
-![](images/limiter_surface_attaque_discord/discord_autorisations.webp)
+![](../../../assets/opsec/limiter_surface_attaque_discord/discord_autorisations.webp)
 
 ===
 
