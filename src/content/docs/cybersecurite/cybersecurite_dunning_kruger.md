@@ -7,13 +7,13 @@ tags: [Cybersécurité, dunning, kruger]
 order: 1
 ---
 
-![(Source : fourweekmba.com)](cybersecurite/cybersecurite_dunning_kruger/dunning-kruger.webp)
+![(Source : fourweekmba.com)](../../assets/cybersecurite/cybersecurite_dunning_kruger/dunning-kruger.webp)
 
 Pour faire très court et dit de manière imagée, l’effet Dunning-Kruger est un type de biais cognitif dans lequel les personnes pensent qu’elles sont plus "intelligentes" et plus "capables" qu’elles ne le seraient en réalité.  
 
 En d’autres termes, les personnes ayant un faible niveau de compétence ne posséderaient pas les compétences nécessaires pour reconnaître leur propre manque de compétences. Cette combinaison de mauvaise conscience de soi et de faible capacité cognitive, mènerait ces personnes à surestimer leurs capacités.
 
-![](cybersecurite/cybersecurite_dunning_kruger/salt.gif)
+![](../../assets/cybersecurite/cybersecurite_dunning_kruger/salt.gif)
 
 ---
 

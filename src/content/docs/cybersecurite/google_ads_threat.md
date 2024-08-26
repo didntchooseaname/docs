@@ -7,20 +7,20 @@ tags: [Cybersécurité, google, ads, threat]
 order: 2
 ---
 
-![](cybersecurite/google_ads_threat/google-ads.webp)
+![](../../assets/cybersecurite/google_ads_threat/google-ads.webp)
 
 Les publicités Google sont devenues un sérieux problème pour la sécurité informatique, servant de **vecteur de distribution** pour divers types de **logiciels malveillants**.
 Cette tendance alarmante exploite la confiance des utilisateurs envers l'ecosystème (et plateforme publicitaire) de Google pour propager des logiciels malveillants et
 compromettre des systèmes. Un exemple récent illustre parfaitement cette menace. En juin 2024, une nouvelle souche de malware ciblant **Mac** a été découverte.
 Ces publicités malveillantes imitaient **Arc**, un navigateur populaire sur macOS, redirigeant les utilisateurs vers un site web contrefait :  
 
-![Source : arstechnica.com](cybersecurite/google_ads_threat/malicious-google-ad-for-fake-arc-browser.webp)
+![Source : arstechnica.com](../../assets/cybersecurite/google_ads_threat/malicious-google-ad-for-fake-arc-browser.webp)
 
 Une fois téléchargé et installé, le logiciel malveillant transmettait les données de l'utilisateur (un infostealer appelé Poseidon).
 **Ce n'est pas un incident isolé**, des attaquants utilisent régulièrement Google Ads pour diffuser divers types de logiciels malveillants à travers de sites trompeurs.
 Ceux-ci imitent des logiciels légitimes populaires tels que **VLC**, **7-Zip** et **CCleaner** et paient **Google** pour être référencés au dessus des autres résultats (exemple pour Open Broadcaster Software) :  
 
-![Source : blog.osarmor.com](cybersecurite/google_ads_threat/obs-studio-search-results.webp)
+![Source : blog.osarmor.com](../../assets/cybersecurite/google_ads_threat/obs-studio-search-results.webp)
 
 La menace est particulièrement insidieuse car elle exploite la **légitimité perçue de Google** et par extension son module **"Ads"**. Les utilisateurs, habitués à faire confiance aux **résultats sponsorisés** de Google, peuvent être moins vigilants face à ces annonces malveillantes. 
 
@@ -32,7 +32,7 @@ Les fichiers téléchargés par ces sites malveillants sont très souvent des **
 
 Comme toujours, pour s'en prémunir il est nécessaire de **télécharger les logiciels uniquement à partir de sources officielles** et de rester vigilant face aux instructions d'installation inhabituelles. Les utilisateurs doivent être conscients que même les annonces légitimes en apparance, peuvent potentiellement héberger du **contenu malveillant**. Bien que Google affirme prendre des mesures contre les annonceurs malveillants une fois informé, la responsabilité de l'identification et de la suppression de ces menaces incombe souvent aux **produits antivirus finaux** ou **solutions de sécurité diverses**. Cette situation souligne la nécessité d'une vigilance accrue de la part des utilisateurs et d'une amélioration des **mécanismes de détection** et de prévention de la part de Google. Rappelons que les revenus publicitaires pèsent énormement pour l'entreprise :  
 
-![Source : https://the-media-leader.fr/les-revenus-publicitaires-de-google-ont-augmente-de-59-en-2023/](cybersecurite/google_ads_threat/google-ads-evolution-graph.webp)
+![Source : https://the-media-leader.fr/les-revenus-publicitaires-de-google-ont-augmente-de-59-en-2023/](../../assets/cybersecurite/google_ads_threat/google-ads-evolution-graph.webp)
 
 Ce point laisse penser qu'au mieux la firme ferme les yeux pour avoir des **revenus plus importants** englobant également tous un package d'**acteurs malveillants**, ou au pire **néglige les contrôles de sécurité effectués**...  
 
