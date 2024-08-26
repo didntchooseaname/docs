@@ -8,7 +8,10 @@ import starlightImageZoom from 'starlight-image-zoom'
 export default defineConfig({
 	integrations: [
 		starlight({
-			plugins: [starlightThemeRapide()] [starlightImageZoom()],
+			plugins: [
+				starlightThemeRapide(),  // Corrected: Both plugins should be in the same array
+				starlightImageZoom(),
+			  ],
 			title: 'My Docs',
 			defaultLocale: 'root',
      		locales: {
