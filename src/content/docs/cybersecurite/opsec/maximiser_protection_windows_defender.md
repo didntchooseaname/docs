@@ -23,9 +23,9 @@ C'est tout à fait compréhensible, puisque comme à son habitude, Windows se do
 
 **Plus la sécurité du système sera avancée et plus il y a de risque de rencontrer des éléments bloquants pour l'utilisateur.** C'est une balance constante avec laquelle, tout le personnel des équipes informatique joue en permanence.  
 
-!!!warning L'informatique change !
+::: warning L'informatique change !
 Il est important de souligner que l'informatique change constamment et que le système à un cycle de vie, des vulnérabilités, des mises à jour. Ces éléments peuvent générer des instabilités et nécessitent une maintenance importante.    
-!!!
+::: 
 
 Le schéma suivant résume bien la sécurité informatique de manière générale. Ca sera donc à vous, tout au long de ce tutoriel de définir votre "niveau de sécurité" en fonction de vos besoins et d'en accepter les potentielles conséquences ! C'est pourquoi **il est impératif de sauvegarder ses données avant toute action**.
 

@@ -50,28 +50,28 @@ Cet article vise à donner des éléments pour **prévenir la récolte d'informa
 - L'ID utilisateur (accessible depuis les developer tools).  
 - Le mail utilisé lors de l'inscription sur Discord.  
 
-!!!info Date de création du compte
+::: info Date de création du compte
 La date de création du compte ainsi que la date à laquelle vous avez rejoint un serveur, donnent des informations sur la récence de votre compte, donc par extension des informations vous concernant.
-!!!
+::: 
 
 :icon-thumbsup: **Le bon sens est tout aussi important** :
 
 - Ne partagez pas d'information (oral, écrit, partage d'écran et webcam) à caractère personnel sur Discord.  
-⚠️ **À PERSONNE** (ni amis, ni "connaissances", ni même à votre famille ou collègues) !!!  
+⚠️ **À PERSONNE** (ni amis, ni "connaissances", ni même à votre famille ou collègues) :::   
 
 - Ne scannez aucun **qrcode**, surtout si ce dernier vous est proposé à des fins de vérification sur un serveur.
 
-!!!primary Partager des informations sensibles sur Discord
+::: primary Partager des informations sensibles sur Discord
 Si vous voulez malgré tout partager une information sensible sur Discord, mais de façon éphémère et sans traces, utilisez un service de partage de texte en ligne, chiffré de bout en bout, avec un mot de passe et une expiration comme : <a href="https://privatebin.net" target="_blank">PrivateBin</a>. De cette manière l'accès à la donnée n'est autorisé qu’une seule fois et/ou nécessite un mot de passe et expire après une date définie. Pour les fichiers, vous pouvez utiliser un service comme <a href="https://proton.me/fr/drive" target="_blank">Protondrive</a> (nécessite un compte et est limité à 1Go gratuit) ou <a href="https://www.swisstransfer.com/fr-fr" target="_blank">Swisstransfer</a> (ne nécessite pas de compte et est limité à 50Go gratuits).
-!!!
+::: 
 
 ---
 
 ## ℹ️ ZONE 1 (facile)
 
-!!!success
+::: success
 Cette zone est destinée aux néophytes qui souhaiteraient adopter quelques bonnes pratiques (le minimum vital) rapidement.
-!!!
+::: 
 
 ==- ↘️ Déplier la zone
 
@@ -89,13 +89,13 @@ Cette zone est destinée aux néophytes qui souhaiteraient adopter quelques bonn
 
 ![Réduire la visibilité publique des comptes liés à Disord](images/limiter_surface_attaque_discord/discord_private.png)
 
-!!!warning :thinking_face: Update du 17 août 2023 - Discord à affiché vos comptes (même si ceux-ci sont cachés).
+::: warning :thinking_face: Update du 17 août 2023 - Discord à affiché vos comptes (même si ceux-ci sont cachés).
 Discord à affiché tous les comptes liés à un profil, indépendamment de la configuration (caché ou non dans les paramètres), source: cet <a target="blank" href="https://discordpreviews.com/private-connections-bug">article</a> et ce <a target="blank" href="https://twitter.com/panley01/status/1692036545539101049">Thread X</a> :  
 
 <center><blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Between 01:50 - 03:00 GMT today, Discord exposed ALL user connections, regardless of visibility settings.<br><br>The data exposed included usernames on private connections like PayPal (default private) &amp; Facebook.<br><br>This is concerning, but not hugely so. Read this thread for more info. <a href="https://t.co/TvRFU0jwFt">pic.twitter.com/TvRFU0jwFt</a></p>&mdash; Panley (@panley01) <a href="https://twitter.com/panley01/status/1692036545539101049?ref_src=twsrc%5Etfw">August 17, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> <center>
 
 :unamused: Ne liez tous simplement pas vos comptes à Discord !
-!!!
+::: 
 
 - N'utilisez aucun selfbot, injection client (betterdiscord like) ou tout autre modifications du client.
 - Ne vous connectez jamais à un site qui propose de vous connecter avec Discord (dans le cas où la base de données du site fuite, des informations tels que : votre pseudo, ID Discord, email, hash de mot de passe... seront disponibles en ligne. Un exemple récent avec <a target="blank" href="https://web.archive.org/web/20230823102446/https://discord.io">discord.io</a>).
@@ -108,9 +108,9 @@ Si vous souhaitez toutefois utiliser cette fonctionnalité sur les sites qui la 
 
 ## ⚠️ ZONE 2 (intermédiaire)
 
-!!!warning
+::: warning
 Cette zone s'aditionne à la précédente et **inclut différents changements de paramétrages** dans Discord.
-!!!
+::: 
 
 ==- ↘️ Déplier la zone
 
@@ -136,9 +136,9 @@ Cette zone s'aditionne à la précédente et **inclut différents changements de
 
 ## 🔐 ZONE 3 (avancé)
 
-!!!danger
+::: danger
 Cette zone s'additionne aux précédentes et présente des **concepts avancés** pour créer un compte Discord sans données personnelles.
-!!!
+::: 
 
 ==- ↘️ Déplier la zone
 
@@ -152,10 +152,10 @@ Cette zone s'additionne aux précédentes et présente des **concepts avancés**
 
 ===
 
-!!!primary Note de fin
+::: primary Note de fin
 Dans le cas où vous appliquez toutes ces mesures, le seul point d'entrée pour vous atteindre est alors en dehors de Discord. C'est d'ailleurs l'un des moyens privilégié pour récolter des informations sur vous, vous faire installer un programme malveillant ou vous subtiliser un cookie de session (comme votre token Discord).  
 
 L'ensemble de ces recommandations vous sont proposées à titre suggestif. Vous pouvez ne pas en appliquer certaines, dû à votre niveau de sécurité voulu. Dans ce cas, il est important de comprendre le risque et d'en accepter les conséquences potentielles.
-!!!
+::: 
 
 ---
