@@ -2,14 +2,10 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightThemeRapide from 'starlight-theme-rapide';
 import starlightImageZoom from 'starlight-image-zoom';
-import mdx from '@astrojs/mdx';
 import embeds from 'astro-embed/integration'
 
 export default defineConfig({
 	integrations: [
-		embeds(), 
-		mdx(),
-		astroExpressiveCode(),
 		starlight({
 			plugins: [
 				starlightThemeRapide(),
@@ -43,5 +39,6 @@ export default defineConfig({
 				github: 'https://github.com/didntchooseaname',
 			},
 		}),
+		embeds(), 
 	],
 });
