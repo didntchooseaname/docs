@@ -7,7 +7,7 @@ tags: [2fa, multifactor, authentification, mfa]
 order: 96
 ---
 
-![(Source : apog.net)](../../assets/opsec/multifactor_authentification/MFA.webp)
+![(Source : apog.net)](../assets/opsec/multifactor_authentification/MFA.webp)
 
 ==- :wrench: Révisions
 
@@ -19,7 +19,7 @@ contactit.fr | 30/08/2023 | Initial push
 
 :information_source: La multifactor authentication (MFA), en français : authentification à plusieurs facteurs ou A2F/2FA (Authentification à 2 facteurs), est une méthode de sécurité informatique qui exige que l'utilisateur fournisse au moins deux types d'informations distincts pour vérifier son identité. Ces facteurs se répartissent généralement en trois catégories :  
 
-![(Source : apog.net)](../../assets/opsec/multifactor_authentification/MFA-know.webp)
+![(Source : apog.net)](../assets/opsec/multifactor_authentification/MFA-know.webp)
 
 - **Quelque chose que vous savez** : Il s'agit généralement d'un mot de passe ou d'un code PIN.  
 
