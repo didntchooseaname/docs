@@ -9,6 +9,7 @@ export default defineConfig({
 	integrations: [
 		embeds(), 
 		mdx(),
+		astroExpressiveCode(),
 		starlight({
 			plugins: [
 				starlightThemeRapide(),
