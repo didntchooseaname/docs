@@ -28,11 +28,12 @@ export default defineConfig({
 			  ],
      		locales: {
 				root: {
-					label: 'English',
+					label: '🇬🇧 English',
 					lang: 'en',
 				},
 				fr: {
-					label: 'Français',
+					label: '🇫🇷 Français',
+					lang: 'fr',
 				},
 			},
 			social: {
