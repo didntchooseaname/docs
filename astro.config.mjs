@@ -18,17 +18,7 @@ export default defineConfig({
       },
       tableOfContents: true,
       defaultLocale: 'root',
-      sidebar: [
-        { label: 'Home', link: '/' },
-        {
-          label: 'opsec',
-          autogenerate: { directory: 'opsec' },
-        },
-        {
-          label: 'pentest',
-          autogenerate: { directory: 'pentest' },
-        },
-      ],
+      
       locales: {
         root: {
           label: '🇬🇧 English',

@@ -1,44 +1,39 @@
 ---
-title: Google Ads, une menace bien réelle
-description: Pourquoi Google ads est une menace sérieuse pour les entreprises et les particuliers.
-categories: [Cybersécurité]
+title: Google Ads, a Real Threat
+description: Why Google Ads is a serious threat to businesses and individuals.
+categories: [Cybersecurity]
 date: 2024-07-01
-tags: [Cybersécurité, google, ads, threat]
+tags: [Cybersecurity, google, ads, threat]
 order: 2
 template: doc
 ---
 
 ![](../../assets/cybersecurite/google_ads_threat/google-ads.webp)
 
-Les publicités Google sont devenues un sérieux problème pour la sécurité informatique, servant de **vecteur de distribution** pour divers types de **logiciels malveillants**.
-Cette tendance alarmante exploite la confiance des utilisateurs envers l'ecosystème (et plateforme publicitaire) de Google pour propager des logiciels malveillants et
-compromettre des systèmes. Un exemple récent illustre parfaitement cette menace. En juin 2024, une nouvelle souche de malware ciblant **Mac** a été découverte.
-Ces publicités malveillantes imitaient **Arc**, un navigateur populaire sur macOS, redirigeant les utilisateurs vers un site web contrefait :  
+Google Ads has become a serious problem for cybersecurity, serving as a **distribution vector** for various types of **malware**. This alarming trend exploits users' trust in Google's ecosystem (and advertising platform) to spread malicious software and compromise systems. A recent example perfectly illustrates this threat. In June 2024, a new strain of malware targeting **Mac** was discovered. These malicious ads mimicked **Arc**, a popular browser on macOS, redirecting users to a counterfeit website:
 
-![Source : arstechnica.com](../../assets/cybersecurite/google_ads_threat/malicious-google-ad-for-fake-arc-browser.webp)
+![Source: arstechnica.com](../../assets/cybersecurite/google_ads_threat/malicious-google-ad-for-fake-arc-browser.webp)
 
-Une fois téléchargé et installé, le logiciel malveillant transmettait les données de l'utilisateur (un infostealer appelé Poseidon).
-**Ce n'est pas un incident isolé**, des attaquants utilisent régulièrement Google Ads pour diffuser divers types de logiciels malveillants à travers de sites trompeurs.
-Ceux-ci imitent des logiciels légitimes populaires tels que **VLC**, **7-Zip** et **CCleaner** et paient **Google** pour être référencés au dessus des autres résultats (exemple pour Open Broadcaster Software) :  
+Once downloaded and installed, the malware transmitted the user's data (an infostealer called Poseidon). **This is not an isolated incident**; attackers regularly use Google Ads to spread various types of malware through deceptive sites. These sites imitate popular legitimate software such as **VLC**, **7-Zip**, and **CCleaner**, and they pay **Google** to be ranked above other results (example for Open Broadcaster Software):
 
-![Source : blog.osarmor.com](../../assets/cybersecurite/google_ads_threat/obs-studio-search-results.webp)
+![Source: blog.osarmor.com](../../assets/cybersecurite/google_ads_threat/obs-studio-search-results.webp)
 
-La menace est particulièrement insidieuse car elle exploite la **légitimité perçue de Google** et par extension son module **"Ads"**. Les utilisateurs, habitués à faire confiance aux **résultats sponsorisés** de Google, peuvent être moins vigilants face à ces annonces malveillantes. 
+The threat is particularly insidious because it exploits the **perceived legitimacy of Google** and, by extension, its **Ads** module. Users, accustomed to trusting Google's **sponsored results**, may be less vigilant when encountering these malicious ads.
 
-:::note Experience personnelle
-À titre personnel, une entreprise dans laquelle j'ai été interne à subit une **crise** (type ransomware) dûe à une **ransomnote** présente en plein écran sur le pc d'un collaborateur. J'ai recommandé à plusieurs reprises un **bloqueur de publicités** côté naviguateur, mais la hiérarchie pensait que les **firewalls** feraient le travail (sachant qu'il étaient neufs à ce moment et fraichement configurés, je ne vais pas rentrer dans les détails, les blocklists de domaines c'est clairement pas suffisant...). En plus de générer du stress et une cessation de l'activité temporaire du collaborateur, l'entreprise à fait appel à un **prestataire spécialisé en forensics** pour trouver l'origine de cette "attaque", qui s'avèrait être un **site imitant une ransomnote en plein écran**. Site atteint par l'utilisateur à cause des **liens sponsorisés** en haut de page sur Google (bloqués par défaut par des bloqueurs de publicités).
-::: 
+:::note Personal Experience
+Personally, a company where I interned experienced a **crisis** (ransomware-related) due to a **ransomnote** displayed full screen on an employee's computer. I repeatedly recommended a **browser-based ad blocker**, but the management believed that **firewalls** would suffice (considering they were new and freshly configured at the time, I won’t go into details, but domain blocklists are clearly not enough…). In addition to generating stress and temporarily halting the employee's work, the company had to hire a **forensics specialist** to trace the origin of this "attack," which turned out to be a **site mimicking a full-screen ransomnote**. The user accessed the site due to **sponsored links** at the top of the Google page (which are blocked by default by ad blockers).
+:::
 
-Les fichiers téléchargés par ces sites malveillants sont très souvent des **archives au format zip avec un mot de passe**. Cela permet de **contourner les scans antivirus** des plates-formes sur lesquelles ils sont hébergés.  
+Files downloaded from these malicious sites are often **password-protected zip archives**, allowing them to **bypass antivirus scans** on the platforms where they are hosted.
 
-Comme toujours, pour s'en prémunir il est nécessaire de **télécharger les logiciels uniquement à partir de sources officielles** et de rester vigilant face aux instructions d'installation inhabituelles. Les utilisateurs doivent être conscients que même les annonces légitimes en apparance, peuvent potentiellement héberger du **contenu malveillant**. Bien que Google affirme prendre des mesures contre les annonceurs malveillants une fois informé, la responsabilité de l'identification et de la suppression de ces menaces incombe souvent aux **produits antivirus finaux** ou **solutions de sécurité diverses**. Cette situation souligne la nécessité d'une vigilance accrue de la part des utilisateurs et d'une amélioration des **mécanismes de détection** et de prévention de la part de Google. Rappelons que les revenus publicitaires pèsent énormement pour l'entreprise :  
+As always, to protect yourself, it is essential to **download software only from official sources** and remain cautious of unusual installation instructions. Users should be aware that even legitimate-looking ads can potentially host **malicious content**. While Google claims to take action against malicious advertisers once informed, the responsibility for identifying and removing these threats often falls on **end-user antivirus products** or other **security solutions**. This situation highlights the need for increased user vigilance and improved **detection and prevention mechanisms** by Google. Let’s not forget that advertising revenue is significant for the company:
 
-![Source : https://the-media-leader.fr/les-revenus-publicitaires-de-google-ont-augmente-de-59-en-2023/](../../assets/cybersecurite/google_ads_threat/google-ads-evolution-graph.webp)
+![Source: https://the-media-leader.fr/les-revenus-publicitaires-de-google-ont-augmente-de-59-en-2023/](../../assets/cybersecurite/google_ads_threat/google-ads-evolution-graph.webp)
 
-Ce point laisse penser qu'au mieux la firme ferme les yeux pour avoir des **revenus plus importants** englobant également tous un package d'**acteurs malveillants**, ou au pire **néglige les contrôles de sécurité effectués**...  
+This point suggests that at best, the company turns a blind eye to generate **higher revenues**, including a package of **malicious actors**, or at worst, **neglects security checks**...
 
 [!embed](https://youtu.be/c5fAiwVvr6s)
- 
+
 [!embed](https://youtu.be/kgckm2DGOOY)
 
 **- Sources :**
@@ -47,7 +42,7 @@ Ce point laisse penser qu'au mieux la firme ferme les yeux pour avoir des **reve
 [https://latesthackingnews.com/2023/01/05/new-malware-campaign-spreads-by-exploiting-google-ads/](https://latesthackingnews.com/2023/01/05/new-malware-campaign-spreads-by-exploiting-google-ads/)  
 [https://www.schneier.com/blog/archives/2023/02/malware-delivered-through-google-search.html](https://www.schneier.com/blog/archives/2023/02/malware-delivered-through-google-search.html)  
 [https://www.bleepingcomputer.com/news/security/ransomware-access-brokers-use-google-ads-to-breach-your-network/](https://www.bleepingcomputer.com/news/security/ransomware-access-brokers-use-google-ads-to-breach-your-network/)  
-[https://www.bleepingcomputer.com/news/security/hackers-push-malware-via-google-search-ads-for-vlc-7-zip-ccleaner/](https://www.bleepingcomputer.com/news/security/hackers-push-malware-via-google-search-ads-for-vlc-7-zip-ccleaner/)  
+[https://www.bleepingcomputer.com/news/security/hackers-push-malware-via-google-search-ads-for-vlc-7-zip-ccleaner/](https://www.bleepingcomputer.com/news/security/hackers-push-malware-via-google-search-ads-for-vlc-7-zip-ccleaner/)
 
 **- References :**
 

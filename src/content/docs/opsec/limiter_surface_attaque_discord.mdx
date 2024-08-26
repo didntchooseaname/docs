@@ -12,14 +12,15 @@ import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
 ![Source : daily-sun.com](../../../assets/opsec/limiter_surface_attaque_discord/discord.webp)
 
- Révisions
-
+<details>
+<summary>Révisions</summary>
 Date | Changes
 --- | ---
 15/09/2023 | Révisions
 21/08/2023 | Révisions 
 20/08/2023 | Révisions 
 18/08/2023 | Initial push 
+</details>
 
 :icon-info: Avez-vous déjà entendu parler de **"DOX/DOXXING/SWAT"** ? **Comprendre le fonctionnement de ces pratiques et vous en protéger !** 
 
@@ -51,7 +52,7 @@ Cet article vise à donner des éléments pour **prévenir la récolte d'informa
 - L'ID utilisateur (accessible depuis les developer tools).  
 - Le mail utilisé lors de l'inscription sur Discord.  
 
-:::note Date de création du compte
+:::note[Date de création du compte]
 La date de création du compte ainsi que la date à laquelle vous avez rejoint un serveur, donnent des informations sur la récence de votre compte, donc par extension des informations vous concernant.
 :::
 
@@ -62,7 +63,7 @@ La date de création du compte ainsi que la date à laquelle vous avez rejoint u
 
 - Ne scannez aucun **qrcode**, surtout si ce dernier vous est proposé à des fins de vérification sur un serveur.
 
-:::danger Partager des informations sensibles sur Discord
+:::danger[Partager des informations sensibles sur Discord]
 Si vous voulez malgré tout partager une information sensible sur Discord, mais de façon éphémère et sans traces, utilisez un service de partage de texte en ligne, chiffré de bout en bout, avec un mot de passe et une expiration comme : <a href="https://privatebin.net" target="_blank">PrivateBin</a>. De cette manière l'accès à la donnée n'est autorisé qu’une seule fois et/ou nécessite un mot de passe et expire après une date définie. Pour les fichiers, vous pouvez utiliser un service comme <a href="https://proton.me/fr/drive" target="_blank">Protondrive</a> (nécessite un compte et est limité à 1Go gratuit) ou <a href="https://www.swisstransfer.com/fr-fr" target="_blank">Swisstransfer</a> (ne nécessite pas de compte et est limité à 50Go gratuits).
 :::
 
@@ -70,7 +71,7 @@ Si vous voulez malgré tout partager une information sensible sur Discord, mais 
 
 ## ℹ️ ZONE 1 (facile)
 
-:::success
+:::tip[Info]
 Cette zone est destinée aux néophytes qui souhaiteraient adopter quelques bonnes pratiques (le minimum vital) rapidement.
 :::
 
@@ -87,7 +88,7 @@ https://youtu.be/-lEg13LKJxE?si=VfgjvBky_GsWTfqC&t=234
 
 ![Réduire la visibilité publique des comptes liés à Disord](../../../assets/opsec/limiter_surface_attaque_discord/discord_private.png)
 
-:::caution Discord à affiché vos comptes (même si ceux-ci sont cachés) !
+:::caution[Discord à affiché vos comptes (même si ceux-ci sont cachés) !]
 Discord à affiché tous les comptes liés à un profil, indépendamment de la configuration (caché ou non dans les paramètres), source: cet <a target="blank" href="https://discordpreviews.com/private-connections-bug">article</a> et ce <a target="blank" href="https://twitter.com/panley01/status/1692036545539101049">Thread X</a> :  
 
 https://twitter.com/panley01/status/1692036545539101049
@@ -104,7 +105,7 @@ Si vous souhaitez toutefois utiliser cette fonctionnalité sur les sites qui la 
 
 ## ⚠️ ZONE 2 (intermédiaire)
 
-:::caution Notice
+:::caution[Info]
 Cette zone s'aditionne à la précédente et **inclut différents changements de paramétrages** dans Discord.
 :::
 
@@ -128,7 +129,7 @@ Cette zone s'aditionne à la précédente et **inclut différents changements de
 
 ## 🔐 ZONE 3 (avancé)
 
-:::danger
+:::danger[Info]
 Cette zone s'additionne aux précédentes et présente des **concepts avancés** pour créer un compte Discord sans données personnelles.
 :::
 
@@ -157,7 +158,7 @@ https://twitter.com/panley01/status/1691184136889708545
 
 - Pour la 2FA utilisez un **numéro de téléphone unique à Discord** (ex. <a href="https://www.onoff.app" target="_blank">OnOff</a> ).
 
-:::note Note de fin
+:::note
 Dans le cas où vous appliquez toutes ces mesures, le seul point d'entrée pour vous atteindre est alors en dehors de Discord. C'est d'ailleurs l'un des moyens privilégié pour récolter des informations sur vous, vous faire installer un programme malveillant ou vous subtiliser un cookie de session (comme votre token Discord).  
 
 L'ensemble de ces recommandations vous sont proposées à titre suggestif. Vous pouvez ne pas en appliquer certaines, dû à votre niveau de sécurité voulu. Dans ce cas, il est important de comprendre le risque et d'en accepter les conséquences potentielles.
