@@ -18,7 +18,7 @@ export default defineConfig({
 				fr: {
 					label: 'Francais',
 				},
-			}
+			},
 			social: {
 				github: 'https://github.com/didntchooseaname',
 			},
