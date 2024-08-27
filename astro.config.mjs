@@ -26,39 +26,39 @@ export default defineConfig({
           translations: {
             'fr': 'Certifications',
           },
-          collapsed: true,
-          autogenerate: { directory: 'certifications' },
+          collapsed: false,
+          autogenerate: { directory: 'certifications', collapsed: true },
         },
         {
           label: 'Offensive',
           translations: {
             'fr': 'Offensif',
           },
-          autogenerate: { directory: 'offensive' },
+          autogenerate: { directory: 'offensive', collapsed: true },
         },
         {
           label: 'Defensive',
           translations: {
             'fr': 'Defensif',
           },
-          collapsed: true,
-          autogenerate: { directory: 'defensive' },
+          collapsed: false,
+          autogenerate: { directory: 'defensive', collapsed: true },
         },
         {
           label: 'Opsec',
           translations: {
             'fr': 'Opsec',
           },
-          collapsed: true,
-          autogenerate: { directory: 'opsec' },
+          collapsed: false,
+          autogenerate: { directory: 'opsec', collapsed: true },
         },
         {
           label: 'Misc',
           translations: {
             'fr': 'Autre',
           },
-          collapsed: true,
-          autogenerate: { directory: 'misc' },
+          collapsed: false,
+          autogenerate: { directory: 'misc', collapsed: true },
         },
       ],
       locales: {
