@@ -4,6 +4,7 @@ import starlightThemeRapide from 'starlight-theme-rapide';
 import starlightImageZoom from 'starlight-image-zoom';
 import embeds from 'astro-embed/integration';
 import mdx from '@astrojs/mdx';
+import astroD2 from 'astro-d2';
 
 export default defineConfig({
   site: 'https://docs.contactit.fr',
