@@ -1,17 +1,17 @@
 ---
 title: Maximizing Windows Defender Protection
 description: Maximize your Windows Defender protection! In this article, we'll explore the configuration I use to enhance the capabilities of Windows Defender and its various modules.
-categories: [OPSEC]
+categories: [defensive]
 lastUpdated: 2023-09-01
-tags: [cybersecurity, opsec, security, windows, defender, maps, application, guard]
+tags: [cybersecurity, defensive, security, windows, defender, maps, application, guard]
 order: 97
 template: doc
-cover: ../../../assets/opsec/maximiser_protection_windows_defender/defender.webp
+cover: ../../../assets/defensive/maximiser_protection_windows_defender/defender.webp
 ---
 
 import { Steps } from '@astrojs/starlight/components';
 
-![Source: 0ut3r.space](../../../assets/opsec/maximiser_protection_windows_defender/defender.webp)
+![Source: 0ut3r.space](../../../assets/defensive/maximiser_protection_windows_defender/defender.webp)
 
 <details>
 <summary>Revisions</summary>
@@ -32,7 +32,7 @@ It's important to note that computing constantly changes, with systems having li
 
 The following diagram summarizes IT security in general. Throughout this tutorial, it will be up to you to define your "security level" based on your needs and accept the potential consequences! That's why **it's imperative to back up your data before any action.**
 
-![Source: vmware.com](../../../assets/opsec/maximiser_protection_windows_defender/conveniancevssec.webp)
+![Source: vmware.com](../../../assets/defensive/maximiser_protection_windows_defender/conveniancevssec.webp)
 
 [!badge size="l" icon="alert" variant="danger" text="**Create a Windows restore point first!**"]
 
@@ -43,23 +43,23 @@ The following diagram summarizes IT security in general. Throughout this tutoria
 
 1. Search for "Create a restore point" in the Windows Start menu.
 
-   ![](../../../assets/opsec/maximiser_protection_windows_defender/pointderestauration.png)
+   ![](../../../assets/defensive/maximiser_protection_windows_defender/pointderestauration.png)
 
 2. Click on Create.
 
-   ![](../../../assets/opsec/maximiser_protection_windows_defender/creer.png)
+   ![](../../../assets/defensive/maximiser_protection_windows_defender/creer.png)
 
 3. Name and create the restore point.
 
-   ![](../../../assets/opsec/maximiser_protection_windows_defender/nom.png)
+   ![](../../../assets/defensive/maximiser_protection_windows_defender/nom.png)
 
 4. Restore point creation in progress...
 
-   ![](../../../assets/opsec/maximiser_protection_windows_defender/progressbar.png)
+   ![](../../../assets/defensive/maximiser_protection_windows_defender/progressbar.png)
 
 5. Close the window.
 
-   ![](../../../assets/opsec/maximiser_protection_windows_defender/finished.png)
+   ![](../../../assets/defensive/maximiser_protection_windows_defender/finished.png)
 
 </Steps>
 
@@ -76,26 +76,26 @@ Go to **"Group Policy Objects"** from the Start menu, for example, then to `Comp
 
 Under the **"MAPS"** section:
 
-![Microsoft's antivirus products and services (MAPS)](../../../assets/opsec/maximiser_protection_windows_defender/MAPS.png)
+![Microsoft's antivirus products and services (MAPS)](../../../assets/defensive/maximiser_protection_windows_defender/MAPS.png)
 
-![Block at first Sight](../../../assets/opsec/maximiser_protection_windows_defender/blockatfirst.png)
+![Block at first Sight](../../../assets/defensive/maximiser_protection_windows_defender/blockatfirst.png)
 
-![Send all samples](../../../assets/opsec/maximiser_protection_windows_defender/sendallsamples.png)
+![Send all samples](../../../assets/defensive/maximiser_protection_windows_defender/sendallsamples.png)
 
 Under the **"MpEngine"** section:
 
-![Cloud Protection Level](../../../assets/opsec/maximiser_protection_windows_defender/cloudprotectionlevel.png)
+![Cloud Protection Level](../../../assets/defensive/maximiser_protection_windows_defender/cloudprotectionlevel.png)
 
-![Extended Cloud Check](../../../assets/opsec/maximiser_protection_windows_defender/extendeddcloudcheck.png)
+![Extended Cloud Check](../../../assets/defensive/maximiser_protection_windows_defender/extendeddcloudcheck.png)
 
 Under the **"Real-Time Protection"** section:
 
-![](../../../assets/opsec/maximiser_protection_windows_defender/realtimeprotection.png)
+![](../../../assets/defensive/maximiser_protection_windows_defender/realtimeprotection.png)
 
 Under the **"Scan"** section:
 
-![](../../../assets/opsec/maximiser_protection_windows_defender/scan.png)
+![](../../../assets/defensive/maximiser_protection_windows_defender/scan.png)
 
 Under the **"Security Intelligence Update"** section:
 
-![](../../../assets/opsec/maximiser_protection_windows_defender/intelupdates.png)
+![](../../../assets/defensive/maximiser_protection_windows_defender/intelupdates.png)
