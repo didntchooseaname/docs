@@ -6,8 +6,12 @@ import embeds from 'astro-embed/integration';
 import mdx from '@astrojs/mdx';
 
 export default defineConfig({
+  site: 'https://docs.contactit.fr',
   integrations: [
     starlight({
+      credits: false,
+      lastUpdated: true,
+      favicon: './public/favicon.svg',
       customCss: [
         './src/styles/custom.css',
       ],
