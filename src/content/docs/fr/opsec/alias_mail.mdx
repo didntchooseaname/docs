@@ -27,7 +27,11 @@ Les alias mails avec les '+' ne seront pas traités dans cet article, beaucoup d
 
 <a href="https//addy.io" target="_blank">Addy (précédemment AnonAddy)</a>. Ces services proposent d'ailleurs 15 adresses (alias) mails pour leurs plans gratuits respectifs. Ce n'est donc plus votre adresse mail principale que vous allez donner à un service, une personne ou lors de votre inscription, mais plutôt une adresse unique générée par le biai du service en question. Ce qui revient à scinder vos identités liées à vos adresses mails, puisqu'en plus de pouvoir choisir le début de l'adresse mail générée, vous pouvez également mettre n’importe quel nom de contact (celui-ci sera affiché lors de la réception d'un mail de votre part).  
 
-![Schéma logique du fonctionnement d'un alias mail (exemple avec Discord)](../../../../assets/opsec/alias_mail/alias_mail.webp)
+```d2 sketch pad=50 title="Logical diagram of how an email alias works" --dark-theme 200 input.d2
+direction: right
+
+Gmail."jdoe@gmail.com" -> Simplelogin."github.yarka@slmail.me" -> Github -> Simplelogin."github.yarka@slmail.me" -> Gmail."jdoe@gmail.com": {style.animated: true}
+```
 
 ---
 
