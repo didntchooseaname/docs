@@ -16,7 +16,7 @@ export default defineConfig({
         './src/styles/custom.css',
       ],
       plugins: [
-        starlightThemeRapide(),
+        // starlightThemeRapide(),
         starlightImageZoom(),
       ],
       title: 'docs.contactit.fr',
