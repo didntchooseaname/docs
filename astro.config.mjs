@@ -99,6 +99,9 @@ export default defineConfig({
     }),
     embeds(),
     mdx(),
-    astroD2(),
+    astroD2({
+      // Disable generating diagrams when deploying on Vercel.
+      skipGeneration: true,
+    }),
   ],
 });
