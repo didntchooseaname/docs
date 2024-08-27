@@ -20,7 +20,47 @@ export default defineConfig({
         src: './src/assets/contactit.webp',
       },
       defaultLocale: 'root',
-      
+      sidebar: [
+        {
+          label: 'Certifications',
+          translations: {
+            'fr': 'Certifications',
+          },
+          collapsed: true,
+          autogenerate: { directory: 'certifications' },
+        },
+        {
+          label: 'Offensive',
+          translations: {
+            'fr': 'Offensif',
+          },
+          autogenerate: { directory: 'offensive' },
+        },
+        {
+          label: 'Defensive',
+          translations: {
+            'fr': 'Defensif',
+          },
+          collapsed: true,
+          autogenerate: { directory: 'defensive' },
+        },
+        {
+          label: 'Opsec',
+          translations: {
+            'fr': 'Opsec',
+          },
+          collapsed: true,
+          autogenerate: { directory: 'opsec' },
+        },
+        {
+          label: 'Misc',
+          translations: {
+            'fr': 'Autre',
+          },
+          collapsed: true,
+          autogenerate: { directory: 'misc' },
+        },
+      ],
       locales: {
         root: {
           label: '🇬🇧 English',
