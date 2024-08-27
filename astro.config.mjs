@@ -99,5 +99,6 @@ export default defineConfig({
     }),
     embeds(),
     mdx(),
+    astroD2(),
   ],
 });
