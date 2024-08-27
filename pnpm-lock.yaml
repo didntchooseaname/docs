@@ -14,9 +14,6 @@ importers:
       '@astrojs/starlight':
         specifier: ^0.26.1
         version: 0.26.1(astro@4.14.5(@types/node@18.19.46)(rollup@4.21.1)(typescript@5.5.4))
-      '@xexiu/astro-accordion':
-        specifier: ^0.0.10
-        version: 0.0.10
       astro:
         specifier: ^4.10.2
         version: 4.14.5(@types/node@18.19.46)(rollup@4.21.1)(typescript@5.5.4)
@@ -664,9 +661,6 @@ packages:
 
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
-
-  '@xexiu/astro-accordion@0.0.10':
-    resolution: {integrity: sha512-fuA4z7LUuYJf24s4jtqi3VXPDgTG0wcTWZaa15jd54rXYfqsLKjsT1P9Q+W4+IAHSP9vdLmA5xVlujCYmMjcjw==}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -2825,8 +2819,6 @@ snapshots:
   '@types/unist@3.0.3': {}
 
   '@ungap/structured-clone@1.2.0': {}
-
-  '@xexiu/astro-accordion@0.0.10': {}
 
   acorn-jsx@5.3.2(acorn@8.12.1):
     dependencies:
