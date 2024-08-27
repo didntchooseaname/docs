@@ -11,7 +11,7 @@ export default defineConfig({
     starlight({
       credits: false,
       lastUpdated: true,
-      favicon: './public/favicon.svg',
+      favicon: './public/contactit.svg',
       customCss: [
         './src/styles/custom.css',
       ],
