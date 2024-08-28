@@ -9,7 +9,7 @@ template: doc
 
 Feedback on Altered Security's "Certified Red Team Expert" certification.
 
-## ▶️ Introduction
+## Introduction
 
 This certification follows on from the CRTP, for which I have already given feedback:
 
@@ -19,7 +19,7 @@ It aims to deepen knowledge of Active Directory, particularly in an environment 
 
 ---
 
-## 📕 Start
+## Start
 
 When you purchase CRTE ($300), you'll be asked to enter an email address. It's best to use a Gmail address (for the learner) to avoid having to contact support later, as authentication on the learning platform is done exclusively via a Google account.  
 
@@ -38,15 +38,15 @@ All servers are running **Windows Server 2019** (Not yet updated to 2022 as of d
 
 ---
 
-## 💻 Exam
+## Exam
 
  **I must remain somewhat vague to avoid spoiling the exam setup.** During the exam, the candidate's mission is to successfully execute commands on the machines within the lab scope (at least 4 to pass the exam, excluding the provided VM). It is not required to obtain local administrator rights on these machines, as no flags need to be collected. The candidate will have **48 hours**, including an additional hour for installing necessary tools, to compromise almost the entire lab and take screenshots that demonstrate the method used, thus enhancing the final report, which should be as flawless as possible.  
 
  **Microsoft Defender is active on all machines**. Defender can be disabled if you have local administrator privileges, but according to the course, you must bypass Defender at least once.
 
-!!! danger
+:::danger[Bypass MDE]
 Following student feedback, Nikhil has agreed to include a method for bypassing MDE. However, it is important to note that this approach could become ineffective at any time. Indeed, MDE is continuously updated with new data and could block this bypass technique at any moment.
-!!!
+:::
 
 During the exam, techniques such as brute force, guessing, bypassing MDE, abusing certificates, or exploiting known vulnerabilities (CVE) are not useful.
 
@@ -62,13 +62,13 @@ After starting the exam, the list of machines appeared on the interface within a
 
 ---
 
-## 📖 Report
+## Report
 
 The report must be written entirely in **English**. It should suggest **corrective measures for the identified misconfigurations** and include references to **blog articles** to enhance the credibility of the document. It is also essential to explain the functionality of the tools used and the reasons for their selection. My individual report was created using [sysreptor](https://github.com/Syslifters/sysreptor) and the [Altered-Security-Reporting](https://github.com/didntchooseaname/Altered-Security-Reporting) template, which I developed with the help of two contributors based on the calzone template. The project's goal is to save time on formatting, automate elements such as the structure of the Executive Summary and Table of Contents, and most importantly, focus on completing only the *functional* parts of the document, such as the *scope* and *attack vectors*.
 
 ---
 
-## 📋 Conclusion
+## Conclusion
 
  The CRTE requires a solid grounding in Active Directory penetration testing. If you've already passed the CRTP, or are a junior/professional in a pentest position with similar assignments, you're welcome to take the plunge.  
 

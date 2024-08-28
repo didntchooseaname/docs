@@ -8,7 +8,7 @@ template: doc
 
 Retour d'expérience sur la certification "Certified Red Team Expert" par Altered Security.
 
-## ▶️ Introduction
+## Introduction
 
 Cette certification est proposée dans la continuité de la CRTP, pour laquelle j’ai déjà fait un retour d'expérience:
 
@@ -18,7 +18,7 @@ Elle vise à approfondir des connaissances en Active Directory, notamment dans u
 
 ---
 
-## 📕 Début
+## Début
 
 Lorsque vous achetez la CRTE (300$), vous devrez renseigner une adresse email. Il est préférable d'utiliser une adresse Gmail (pour l'apprenant) afin d'éviter d'avoir à contacter le support plus tard, car l'authentification sur la plateforme d'apprentissage se fait exclusivement via un compte Google.
 
@@ -30,22 +30,22 @@ Lorsque vous achetez la CRTE (300$), vous devrez renseigner une adresse email. I
 
  Concernant le cours, il y a **30 "Objectifs d'apprentissage"**, chacun d'entre eux vous indique un objectif à atteindre (une ou plusieurs informations à renseigner) par l'énumération/exploitation de l'environnement du lab sur un sujet en particulier ou pour pivoter sur une autre machine. Celui-ci couvre de la reconnaissance/énumération/exploitation Kerberos aux attaques sur les certificats, l'abus de relations de confiance entre forêts et l'exploitation de serveurs SQL tout en prenant en compte une importante gestion du bruit et de l'opsec afin de contourner Defender et Microsoft defender for Endpoints/Identity (MDE/MDI). Attention à la détection comportementale de MDI ! Il peut être judicieux de ne demander qu'un ticket à la fois, de ne pas faire d'action de masse, de ne pas dump le processus lsass, de mettre des délais aléatoires entre les actions... Ces éléments sont activement monitorés par MDI !
 
-📍 L'environnement d'apprentissage et celui du passage de la certification sont similaires, notamment au niveau des mesures de sécurité :
+L'environnement d'apprentissage et celui du passage de la certification sont similaires, notamment au niveau des mesures de sécurité :
 Tous les serveurs sont sous **Windows Server 2019** (Pas encore mis à jour vers 2022 en date, il n'y a pas de différences pratiques entre les 2 versions de Windows Server) avec les **mises à jour de sécurité appliquées en date**, le **firewall Windows et Defender sont actifs**, certains serveurs sont en version **"core"**, de plus des mécanismes de sécurité comme **WDAC/gMSA/LAPS**. Une grosse marche en plus niveau sécurité par rapport à l'environnement de la CRTP. **La présence de mauvaises configurations/ACL permet la compromission des machines.**
 
  les retours d'expériences, les anecdotes, les explications détaillées des concepts ; que l'on peut écouter avec les vidéos du bootcamp animées par **Nikhil Mittal** (Fondateur d'Altered Security) et **Munaf Sahriff** maintenant.
 
 ---
 
-## 💻 Examen
+## Examen
 
  **Je me dois de rester asser évasif pour ne pas spoil le set d'examen.** Au cours de l'examen, le candidat aura pour mission de mener à bien une **exécution de commandes sur les machines dans le scope du lab** (au moins 4 pour réussir l'examen, excepté la vm fournie). Il n'est pas requis d'obtenir les droits d'administrateur local sur ces machines, d'autant plus qu'aucun flag n'est à collecter. Le candidat disposera de **48 heures**, incluant une heure supplémentaire allouée pour l'installation des outils nécessaires, afin de compromettre la totalité du lab (ou presque) et de réaliser des captures d'écran qui attestent de la méthode de compromission employée, enrichissant ainsi le rapport final qui doit être le plus irréprochable possible.  
 
  **Microsoft Defender est actif sur l'ensemble des machines**. Defender peut être désactivé si vous disposez des privilèges d'administrateur local, il faudra conformément au cours, bypass defender au moins lors d'une étape.  
 
-!!! danger
+:::danger[Bypass MDE]
 Suite aux retours des étudiants, Nikhil a accepté d'intégrer une méthode de contournement de MDE. Cependant, il est important de noter que cette approche pourrait devenir inefficace à tout instant. En effet, MDE s'enrichit continuellement de nouvelles données et pourrait, à n'importe quel moment, bloquer cette technique de contournement.
-!!!
+:::
 
 Durant l'examen, les techniques telles que le bruteforce, le guessing, bypass MDE, l'abus de certificats ou l'exploitation de vulnérabilités connues (CVE) ne sont pas utiles.  
 
@@ -61,13 +61,13 @@ Après avoir lancé l'examen, la liste des machines est apparue sur l'interface 
 
 ---
 
-## 📖 Rapport
+## Rapport
 
 Le rapport devra être rédigé intégralement en **anglais**. Il conviendra de suggérer des **mesures correctives pour les configurations inappropriées identifiées**, et d'ajouter des références à des **articles de blog** pour renforcer la crédibilité du document. Il est également essentiel d'expliquer le fonctionnement des outils utilisés et les raisons de leur choix. Mon rapport individuel a été créé à l'aide de [sysreptor](https://github.com/Syslifters/sysreptor) et le template [Altered-Security-Reporting](https://github.com/didntchooseaname/Altered-Security-Reporting), que j'ai pu créer avec l'aide de 2 contributeurs sur base du template calzone. L'objectif du projet est de gagner du temps sur la forme, automatiser les élements comme la strcture de l'Executive Summary et la Table des matières et surtout, de ne remplir que la partie *fonctionnelle* du document comme le *périmètre* et les *vecteurs d'attaques*.
 
 ---
 
-## 📋 Conclusion
+## Conclusion
 
  La CRTE requiert des fondamentaux solides en test d'intrusion Active Directory. Vous pouvez donc vous lancer dans cette aventure si vous avez déja passé la CRTP ou que vous êtes un junior/professionnel en poste de pentest avec des missions similaires.
 
