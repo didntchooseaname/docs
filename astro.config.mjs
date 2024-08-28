@@ -4,6 +4,7 @@ import starlightThemeRapide from 'starlight-theme-rapide';
 import starlightImageZoom from 'starlight-image-zoom';
 import embeds from 'astro-embed/integration';
 import mdx from '@astrojs/mdx';
+import astroD2 from 'astro-d2';
 
 // https://astro.build/config
 export default defineConfig({
@@ -96,5 +97,5 @@ export default defineConfig({
       github: 'https://github.com/didntchooseaname',
       linkedin: 'https://www.linkedin.com/in/didntchooseaname'
     }
-  }), embeds(), mdx()]
+  }), embeds(), mdx(), astroD2()]
 });
