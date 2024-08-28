@@ -20,6 +20,22 @@ export default defineConfig({
       components: {
         Head: "./src/components/starlight/Head.astro",
       },
+      head: [
+        {
+          tag: 'meta',
+          attrs: {
+            property: 'og:image',
+            content: '/og.png'
+          }
+        },
+        {
+          tag: 'meta',
+          attrs: {
+            property: 'twitter:image',
+            content: '/og.png'
+          }
+        }
+      ],
       logo: {
         src: './src/assets/contactit.webp'
       },
