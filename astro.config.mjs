@@ -17,6 +17,8 @@ export default defineConfig({
       customCss: ['./src/styles/custom.css'],
       plugins: [starlightThemeRapide(), starlightImageZoom()],
       title: 'docs.contactit.fr',
+      components: {
+        Head: "./src/components/starlight/Head.astro",
       head: [
         {
           tag: 'meta',
