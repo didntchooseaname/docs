@@ -19,6 +19,7 @@ export default defineConfig({
       title: 'docs.contactit.fr',
       components: {
         Head: "./src/components/starlight/Head.astro",
+      },
       head: [
         {
           tag: 'meta',
