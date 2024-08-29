@@ -87,11 +87,11 @@
   --sl-color-orange-accent-invert: oklch(52% 0.15 var(--sl-hue-orange));
   --sl-color-orange-alt: oklch(95% 0.03 var(--sl-hue-orange));
   --sl-color-orange-alt-invert: oklch(78% 0.06 var(--sl-hue-orange));
-  --sl-color-green-low: oklch(96% 0.01 var(--sl-hue-green));
-  --sl-color-green: oklch(66% 0.14 var(--sl-hue-green));
-  --sl-color-green-high: oklch(43% 0.09 var(--sl-hue-green));
-  --sl-color-green-accent: oklch(36% 0.07 var(--sl-hue-green));
-  --sl-color-green-accent-invert: oklch(50% 0.1 var(--sl-hue-green));
+  --sl-color-green-low: oklch(95% 0.02 var(--sl-hue-green));
+  --sl-color-green: oklch(66% 0.15 var(--sl-hue-green));
+  --sl-color-green-high: oklch(40% 0.102 var(--sl-hue-green));
+  --sl-color-green-accent: oklch(35% 0.1 var(--sl-hue-green));
+  --sl-color-green-accent-invert: oklch(52% 0.2 var(--sl-hue-green));
   --sl-color-blue-low: oklch(95% 0.02 var(--sl-hue-blue));
   --sl-color-blue: oklch(66% 0.15 var(--sl-hue-blue));
   --sl-color-blue-high: oklch(40% 0.102 var(--sl-hue-blue));
