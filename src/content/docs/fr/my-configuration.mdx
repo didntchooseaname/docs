@@ -34,13 +34,9 @@ Toutes les spécifications peuvent être trouvées [ici](https://www.officexpres
 
 **PS** : J'ai pensé aux Thinkpads avec **IntelME** __partiellement__ désactivé et **libreboot** 🕵️, mais minifree.org ne propose pas de machines récentes, j'étais intéressé par le T440p qu'ils ont (littéralement une brique) et il y a un écart significatif entre l'i7 4ème gen et le Ryzen 7 4ème gen du P14S Gen1.
 
----
-
 ## Système d'exploitation
 
 ![](../../../assets/linux/my-configuration/iusearchbtw.webp)
-
-**So yeah, i use Arch BTW.........** 😎
 
 Si vous souhaitez prendre soin des paquets, des configurations et des scripts vous-même, Arch est la voie à suivre pour garder le contrôle et surtout **APPRENDRE** en faisant et comprendre le fonctionnement des paquets et du GNU/Linux. L'OS est vraiment minimal par défaut, donc **"FAITES-LE VOUS-MÊME"**.
 
@@ -54,13 +50,11 @@ L'**"Arch Users Repository"** est un énorme dépôt de paquets fournis par la c
 
 ![](../../../assets/linux/my-configuration/desktop.webp)
 
-J'aime les choses simples, modernes et intelligentes. J'ai découvert **Hyprland** il y a quelques années et j'ai décidé de l'essayer sur cet ordinateur portable, j'ai donc cherché des tutoriels sur YouTube pour voir comment les gens l'installaient et le personnalisait. Je suis tombé sur la chaîne [YouTube de Ja Kool.it](https://www.youtube.com/@Ja.KooLit) et j'ai suivi la vidéo "My Hyprland Dots v2 on Debian 13 Linux minimal using netinstaller and Debian-Hyprland install script" [vidéo](https://www.youtube.com/watch?v=Qc4VP9JFh2Y). Cette config **m'a époustouflé**, elle a fonctionné immédiatement, elle était rapide, réactive et agréable à l'œil !
+J'aime les choses simples et modernes. J'ai découvert **Hyprland** il y a quelques années et j'ai décidé de l'essayer sur cet ordinateur portable, j'ai donc cherché des tutoriels sur YouTube pour voir comment les gens l'installaient et le personnalisait. Je suis tombé sur la chaîne [YouTube de Ja Kool.it](https://www.youtube.com/@Ja.KooLit) et j'ai suivi la vidéo "My Hyprland Dots v2 on Debian 13 Linux minimal using netinstaller and Debian-Hyprland install script" [vidéo](https://www.youtube.com/watch?v=Qc4VP9JFh2Y). Cette config **m'a époustouflé**, elle a fonctionné immédiatement, elle était rapide, réactive et agréable à l'œil !
 
 Mais attendez, vous avez dit que vous étiez sur Arch maintenant ! Alors oui, j'ai changé quelques semaines plus tard en raison de **l'insoutenabilité de la version SID de Debian**, du fait que certains **paquets de base ne sont pas maintenus** et que Ja voulait **arrêter le support de ses configurations sur Debian Trixie** pour le moment.
 
 **EDIT**: Je suis passé aux [dotfiles de ML4W](https://github.com/mylinuxforwork/dotfiles), plus à jour, avec une interface graphique pour modifier les paramètres de Hyprland et une meilleure intégration.
-
----
 
 ## Outillage
 
@@ -96,27 +90,31 @@ Vous pouvez suivre les étapes d'installation et obtenir des conseils ici :
 
 [Exegol Cheat Sheet](offensive/Exegol_Cheat_Sheet.mdx)
 
----
-
 ## Avis Important
 
 **Remarque** : Lors de l'installation d'Arch, j'ai rencontré un problème concernant la disposition du clavier dans l'invite de cryptsetup (qui était réglée sur US). Il semble que ce soit un vieux problème pour de nombreux utilisateurs d'Arch. Voici la solution (en chroot après l'installation ou entrez votre mot de passe en pensant à la disposition QWERTY) :
 
-```sh
-vim /etc/vconsole.conf
-```
+<Setps>
 
-Il semble que ce soit un problème avec la définition de la variable KEYMAP en fr, il faut donc passer à fr-latin9 et reconstruire l'image Linux :
+1. Editer le fichier vconsole.conf:
 
-```sh
-KEYMAP=fr-latin9
-```
+   ```sh
+   vim /etc/vconsole.conf
+   ```
 
-Puis reconstruire l'image (nécessite les privilèges root) :
+2. Définir le mappage du clavier en Français:
 
-```sh
-mkinitcpio -P
-```
+   ```sh
+   KEYMAP=fr-latin9
+   ```
+
+3. Puis reconstruire l'image (nécessite les privilèges root):
+
+   ```sh
+   mkinitcpio -P
+   ```
+
+</Steps>
 
 ## Correction de la webcam
 
@@ -135,8 +133,6 @@ nvim
 ```
 
 ![nvchad](../../../assets/linux/my-configuration/nvchad.webp)
-
----
 
 ## Virtualisation
 
@@ -173,7 +169,7 @@ J'utilise QEMU/KVM et un script pour lancer et accéder en RDP automatiquement �
 
 </Steps>
 
-Et le **script de bureau à distance**:
+Et le script de **RDP sur une VM**:
 
 ```sh
 #!/bin/bash
@@ -231,8 +227,6 @@ else
 fi
 ```
 
----
-
 ## Gestion des paquets
 
 **Pacman** s'occupe des paquets core/extra, **yay** de ceux d'**AUR**. Une fois par mois, je nettoie les paquets orphelins et le cache :
@@ -240,8 +234,6 @@ fi
 ```sh
 sudo pacman -Rns $(pacman -Qtdq) && yay -Scc
 ```
-
----
 
 ## Configuration des snapshots automatiques
 

@@ -34,21 +34,15 @@ All specifications could be found [here](https://www.officexpress.fr/10145925-20
 
 **PS** : I thinked about thinkpad with **IntelME** __partially__ disabled and **libreboot** 🕵️, but minifree.org don't provide recent machines, I was interested by the T440p they have (literaly a brick) and there is a significant gap betwteen the i7 4th gen in and the Ryzen 7 4th gen of the P14S Gen1.
 
----
-
 ## Operation System
 
 ![](../../assets/linux/my-configuration/iusearchbtw.webp)
-
-**So yeah, I use Arch btw.........** 😎
 
 If you want to take care about packages, configurations and scripts yourself Arch is the way to go to keep control and mostly **LEARN** by doing and understand the way packages and GNU/Linux works. Since the OS is really minimal per default so **"DO IT YOURSELF"**.  
 
 ArchLinux is a **"Rolling release"** distribution means that packages are upgraded on latest version when available, so there are no "releases". There is the "Arch Wiki" as well, who you can compare to the "Holy bible" of arch users (and yeah, it's pretty HUGE). The **"Arch user"** is **THE** smart guy (That what the users said not me 😀, lots of humor).  
 
 The **"Arch Users Repository"** is a huge repository of packages provided by the community, it aims at complete the officials ones and permit to all developers to share their packages. Keep in mind that theses packages are unofficial.
-
----
 
 ## Desktop Environment
 
@@ -59,8 +53,6 @@ I love simple, modern and smart things. I discovered **Hyprland** few years ago 
 But wait, you said you're on Arch right now ! So yes, I switched few weeks later because of the **unsustainability of the SID realease of debian**, the fact that some **core packages aren't maintained** and Ja would like to **stop the support about his configurations on debian Trixie** for the moment.  
 
 **EDIT**: I switched to the [ML4W's dotfiles](https://github.com/mylinuxforwork/dotfiles), more updated, GUI to modify hyprland settings and better integrations.
-
----
 
 ## Tooling
 
@@ -96,27 +88,31 @@ You can follow installation steps and get some tips here:
 
 [Exegol Cheat Sheet](offensive/Exegol_Cheat_Sheet.mdx)
 
----
-
 ## Important Notice
 
 **Note**: When Arch was installed i experienced an issue about the keybloard layout into the cryptsetup prompt (which was set to US). It seems to be an old issue for a lots of Arch users, here is the solution (in chroot after installation or enter your passphrase and think about QWERTY layout):
 
-```sh
-vim /etc/vconsole.conf
-```
+<Steps>
 
-It seems to be an issue with the definition of the **KEYMAP** variable in `fr`, so need to switch to `fr-latin9` and rebuild the linux image:  
+1. Edit the vconsole.conf file:
 
-```sh
-KEYMAP=fr-latin9
-```
+   ```sh
+   vim /etc/vconsole.conf
+   ```
 
-And then rebuild the image (need root privileges):
+2. Define keyboard mapping to fr:
 
-```sh
-mkinitcpio -P
-```
+   ```sh
+   KEYMAP=fr-latin9
+   ```
+
+3. And then rebuild the image (need root privileges):
+
+   ```sh
+   mkinitcpio -P
+   ```
+
+</Steps>
 
 ## Webcam fix
 
@@ -135,8 +131,6 @@ nvim
 ```
 
 ![nvchad](../../assets/linux/my-configuration/nvchad.webp)
-
----
 
 ## Virtualization
 
@@ -230,8 +224,6 @@ else
 fi
 ```
 
----
-
 ## Packages Managment
 
 **Pacman** take care of core/extra packages, **yay** of **AUR**'s ones, on time per month i cleanup orphaned packages and cache:
@@ -239,8 +231,6 @@ fi
 ```sh
 sudo pacman -Rns $(pacman -Qtdq) && yay -Scc
 ```
-
----
 
 ## Auto snapshots configuration
 
