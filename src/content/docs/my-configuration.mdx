@@ -4,7 +4,7 @@ description: What hardware/OS i run on, which environment, dot files and workflo
 categories: [Linux]
 tags: [linux, config, dotfile, arch, hyprland]
 sidebar:
-  order: 1
+  order: 100
   badge:
     text: conf
     variant: tip
@@ -12,7 +12,7 @@ sidebar:
 
 import { Steps, Icon } from '@astrojs/starlight/components';
 
-## Which model you choosed ?
+## Laptop
 
 Before naming the model, I would like to say first that I set some limits regarding the budget and the performance of the machine. I need laptop for the **school and events** and I want it to be as **powerful as possible** (I tought about an i7 or Ryzen 7 and 16GB, seems good for few virtual machines and pentesting) for a budget around **$600** (550€). So, I looked for a **second hand computer** on famous marketplaces in order to get a good bang for the buck. Ideally I would like a **fingerprint sensor**, a **"cache camera"** included and a **lightweight** one (for moving).
 
@@ -22,11 +22,9 @@ The context is said, after few weeks of search I found one feets my needs in a p
 
 Here is the precise model i have now : **Lenovo ThinkPad P14s Gen 1 - 14"**
 
-+++ Front
-![Pitcures sources : OfficeXpress](../../assets/linux/my-configuration/laptop.webp)
-+++ Behind
-![Without any sticker 😉](../../assets/linux/my-configuration/laptopb.webp)
-+++
+Front | Behind
+--- | ---
+![Pitcures sources : OfficeXpress](../../assets/linux/my-configuration/laptop.webp) | ![Without any sticker 😉](../../assets/linux/my-configuration/laptopb.webp)
 
 CPU | RAM | ROM
 --- | --- | ---
@@ -38,33 +36,33 @@ All specifications could be found [here](https://www.officexpress.fr/10145925-20
 
 ---
 
-## What Operation System do you use ?
+## Operation System
 
--![](../../assets/linux/my-configuration/iusearchbtw.webp)
+![](../../assets/linux/my-configuration/iusearchbtw.webp)
 
 **So yeah, I use Arch btw.........** 😎
 
-If you want to take care about packages, configurations and scripts yourself Arch is the way to go to keep control and mostly **LEARN** by doing and understand the way packages and GNU/Linux works. Since the OS is really minimal per default so **"DO IT YOURSELF"**.
+If you want to take care about packages, configurations and scripts yourself Arch is the way to go to keep control and mostly **LEARN** by doing and understand the way packages and GNU/Linux works. Since the OS is really minimal per default so **"DO IT YOURSELF"**.  
 
-ArchLinux is a **"Rolling release"** distribution means that packages are upgraded on latest version when available, so there are no "releases". There is the "Arch Wiki" as well, who you can compare to the "Holy bible" of arch users (and yeah, it's pretty HUGE). The **"Arch user"** is **THE** smart guy (That what the users said not me 😀, lots of humor).
+ArchLinux is a **"Rolling release"** distribution means that packages are upgraded on latest version when available, so there are no "releases". There is the "Arch Wiki" as well, who you can compare to the "Holy bible" of arch users (and yeah, it's pretty HUGE). The **"Arch user"** is **THE** smart guy (That what the users said not me 😀, lots of humor).  
 
 The **"Arch Users Repository"** is a huge repository of packages provided by the community, it aims at complete the officials ones and permit to all developers to share their packages. Keep in mind that theses packages are unofficial.
 
 ---
 
-## What about your desktop environment ?
+## Desktop Environment
 
-![](../../assets/linux/my-configuration/desktop.webp)-
+![](../../assets/linux/my-configuration/desktop.webp)
 
-:icon-paintbrush: I love simple, modern and smart things. I discovered **Hyprland** few years ago and decided to give it a try on this laptop, so I searched at tutorials on youtube to see how peoples managed to install, customize it and the results. I land on the **Ja Kool.it**'s [youtube channel](https://www.youtube.com/@Ja.KooLit) and followed the "My Hyprland Dots v2 on Debian 13 Linux minimal using netinstaller and Debian-Hyprland install script" [video](https://www.youtube.com/watch?v=Qc4VP9JFh2Y). This config **blew my mind**, it worked out of the box, it was fast, responsive and eyes candy!
+I love simple, modern and smart things. I discovered **Hyprland** few years ago and decided to give it a try on this laptop, so I searched at tutorials on youtube to see how peoples managed to install, customize it and the results. I land on the **Ja Kool.it**'s [youtube channel](https://www.youtube.com/@Ja.KooLit) and followed the "My Hyprland Dots v2 on Debian 13 Linux minimal using netinstaller and Debian-Hyprland install script" [video](https://www.youtube.com/watch?v=Qc4VP9JFh2Y). This config **blew my mind**, it worked out of the box, it was fast, responsive and eyes candy!  
 
-:icon-ruby: But wait, you said you're on Arch right now ! So yes, I switched few weeks later because of the **unsustainability of the SID realease of debian**, the fact that some **core packages aren't maintained** and Ja would like to **stop the support about his configurations on debian Trixie** for the moment. 
+But wait, you said you're on Arch right now ! So yes, I switched few weeks later because of the **unsustainability of the SID realease of debian**, the fact that some **core packages aren't maintained** and Ja would like to **stop the support about his configurations on debian Trixie** for the moment.  
 
-:icon-pencil: **EDIT**: I switched to the [ML4W's dotfiles](https://github.com/mylinuxforwork/dotfiles), more updated, GUI to modify hyprland settings and better integrations.
+**EDIT**: I switched to the [ML4W's dotfiles](https://github.com/mylinuxforwork/dotfiles), more updated, GUI to modify hyprland settings and better integrations.
 
 ---
 
-## What about pentesting tools ?
+## Tooling
 
 When you want a **pentesting environment**, you will think first about a GNU/Linux "Hacking" distribution like : Kali, Parrot, BlackArch or AthenaOS. The huge downside of theses distributions is you **don't have the the control about the installed packages, the python projects implementation** (are they installed properly in venv, with symlinks for convenience ?), **the bloatwares** (packages installed by default that you will never use and yeah, there are a lots !), oh, and yes again **python dependancies that can get conflicts with the time**. To conclude, separate the operation system from the tools used is the way to go.  
 
@@ -140,7 +138,7 @@ nvim
 
 ---
 
-## And for Virtualization ?
+## Virtualization
 
 I use QEMU/KVM and a script to launch and RDP automatically in a forensics Virtual Machine.
 
@@ -234,7 +232,7 @@ fi
 
 ---
 
-## How do you manage programs ?
+## Packages Managment
 
 **Pacman** take care of core/extra packages, **yay** of **AUR**'s ones, on time per month i cleanup orphaned packages and cache:
 
