@@ -59,6 +59,18 @@ export default defineConfig({
       defaultLocale: 'root',
       sidebar: [
         {
+          slug: 'my-configuration',
+          label: 'My GNU/Linux workstation configuration',
+          translations: {
+            fr: 'Ma configuration laptop GNU/Linux'
+          },
+          collapsed: false,
+          autogenerate: {
+            directory: 'certifications',
+            collapsed: true
+          }
+        },
+        {
           label: 'Certifications',
           translations: {
             fr: 'Certifications'
