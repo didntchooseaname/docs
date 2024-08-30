@@ -10,6 +10,9 @@ import astroD2 from 'astro-d2';
 // https://astro.build/config
 export default defineConfig({
   output: 'server',
+  prefetch: {
+    defaultStrategy: 'viewport'
+  },
   adapter: vercel(),
   site: 'https://docs.contactit.fr',
   integrations: [
