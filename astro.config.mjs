@@ -13,6 +13,12 @@ export default defineConfig({
   prefetch: {
     defaultStrategy: 'viewport'
   },
+  redirects: {
+    '/certifications/crte/en/': '/certifications/crte',
+    '/certifications/crte/fr/': '/certifications/crte',
+    '/certifications/crtp/en/': '/certifications/crtp',
+    '/certifications/crtp/fr/': '/certifications/crtp'
+  },
   adapter: vercel(),
   site: 'https://docs.contactit.fr',
   integrations: [
