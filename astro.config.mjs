@@ -17,7 +17,11 @@ export default defineConfig({
     '/certifications/crte/en/': '/certifications/crte',
     '/certifications/crte/fr/': '/certifications/crte',
     '/certifications/crtp/en/': '/certifications/crtp',
-    '/certifications/crtp/fr/': '/certifications/crtp'
+    '/certifications/crtp/fr/': '/certifications/crtp',
+    'https://docs.contactit.fr/cybersecurite/google_ads_threat/': '/misc/google_ads_threat/',
+    'https://docs.contactit.fr/cybersecurite/opsec/limiter_surface_attaque_discord/': '/opsec/limiter_surface_attaque_discord/',
+    'https://docs.contactit.fr/windows_server_ldap/active_directory/active-directory-tp-uo-ou-gg-gl-partages-et-droits-utilisateurs/': '/infra/windows/active-directory-tp-uo-ou-gg-gl-partages-et-droits-utilisateurs',
+    'https://docs.contactit.fr/my-configuration/': '/my-configuration/'
   },
   adapter: vercel(),
   site: 'https://docs.contactit.fr',
