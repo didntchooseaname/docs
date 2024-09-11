@@ -25,7 +25,7 @@ export default defineConfig({
     starlight({
       credits: false,
       lastUpdated: true,
-      favicon: './public/contactit.svg',
+      favicon: '/favicon.ico',
       customCss: ['./src/styles/custom.css'],
       plugins: [starlightThemeRapide(), starlightImageZoom()],
       title: 'docs.contactit.fr',
